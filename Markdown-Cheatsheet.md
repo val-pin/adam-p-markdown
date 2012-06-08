@@ -124,6 +124,8 @@ Reference-style:
 
 ## Code and Syntax Highlighting
 
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+
 ```no-highlight
 Inline `code` has `back-ticks around` it.
 ```
@@ -162,9 +164,9 @@ print s
 No language indicated, so no syntax highlighting in Markdown Here (varies on Github). But let's throw in a <b>tag</b>.
 ```
 
-(If the above are not highlighted (the strings are not red, for example)... Github wiki pages seem to be rendered differently/poorly. Try it out in a *Markdown Here* email or a Github Markdown README or Issue.)
+(If the above are not highlighted (the strings are not red, for example), well... Github wiki pages seem to be rendered differently/poorly. Try it out in a *Markdown Here* email or a Github Markdown README or Issue.)
 
-To see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ## Blockquotes
 
