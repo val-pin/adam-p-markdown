@@ -4,7 +4,20 @@ This is specifically **Github-flavored Markdown**.
 
 Note that the styling *Markdown Here* uses might vary from what Github uses (so, what you see below). But it should be pretty close.
 
-## Header Text
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+[Lists](#lists)  
+[Links](#links)  
+[Images](#images)  
+[Code and Syntax Highlighting](#code)  
+[Blockquotes](#blockquotes)  
+[Inline HTML](#html)  
+[Horizontal Rule](#hr)  
+[Line Breaks](#lines)  
+
+<a name="headers"/>
+## Headers
 
 ```no-highlight
 # H1
@@ -22,6 +35,7 @@ Note that the styling *Markdown Here* uses might vary from what Github uses (so,
 ##### H5
 ###### H6
 
+<a name="emphasis"/>
 ## Emphasis
 
 ```no-highlight
@@ -34,6 +48,7 @@ Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
+<a name="lists"/>
 ## Lists
 
 ```no-highlight
@@ -64,6 +79,7 @@ Strong emphasis, aka bold, with **asterisks** or __underscores__.
 - Or minuses
 + Or pluses
 
+<a name="links"/>
 ## Links
 
 There are two ways to do links.
@@ -98,6 +114,7 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
+<a name="images"/>
 ## Images
 
 ```no-highlight
@@ -122,6 +139,7 @@ Reference-style:
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Title text"
 
+<a name="code"/>
 ## Code and Syntax Highlighting
 
 Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
@@ -168,6 +186,7 @@ No language indicated, so no syntax highlighting in Markdown Here (varies on Git
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
+<a name="blockquotes"/>
 ## Blockquotes
 
 ```no-highlight
@@ -186,7 +205,8 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 
-## HTML
+<a name="html"/>
+## Inline HTML
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well. Here are a couple of common examples:
 
@@ -252,7 +272,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well. H
 
 Github-flavored Markdown supports a special table syntax, but *Markdown Here* does not support it yet. [There's an issue for it.](https://github.com/adam-p/markdown-here/issues/13)
 
-
+<a name="hr"/>
 ## Horizontal Rule
 
 ```
@@ -284,3 +304,28 @@ Asterisks
 ___
 
 Underscores
+
+<a name="lines"/>
+## Line Breaks
+
+My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once, then hit it twice, see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
+
+Here are some things to try out:
+
+```
+With only a single newline, this line and
+this line will be a *single line*.
+
+But this one is separated by two newlines and so will be a *separate paragraph*.
+
+This line has two spaces at the end (hard for you to see, but trust me!).  
+So this is a separate line in the *same paragraph*.
+```
+
+With only a single newline, this line and
+this line will be a *single line*.
+
+But this one is separated by two newlines and so will be a *separate paragraph*.
+
+This line has two spaces at the end (hard for you to see, but trust me!).  
+So this is a separate line in the *same paragraph*.
