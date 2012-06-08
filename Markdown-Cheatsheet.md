@@ -187,7 +187,6 @@ Quote break.
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well. Here are a couple of common examples:
 
 ```no-highlight
-
 <dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
