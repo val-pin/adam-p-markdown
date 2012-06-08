@@ -246,7 +246,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well. H
   </tr>
 </table>
 
-Github-flavored Markdown supports a special table syntax, but Markdown Here does not support it yet. [There's an issue for it.](https://github.com/adam-p/markdown-here/issues/13)
+Github-flavored Markdown supports a special table syntax, but *Markdown Here* does not support it yet. [There's an issue for it.](https://github.com/adam-p/markdown-here/issues/13)
 
 
 ## Horizontal Rule
