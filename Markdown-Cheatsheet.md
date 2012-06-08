@@ -104,23 +104,23 @@ Some text to show that the reference links can follow later.
 Here's our logo:
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Alt-text Title for our logo")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Title text")
 
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Alt-text Title for our logo"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Title text"
 ```
 
 Here's our logo:
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Alt-text Title for our logo")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Title text")
 
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Alt-text Title for our logo"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Title text"
 
 ## Code and Syntax Highlighting
 
