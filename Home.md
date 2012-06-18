@@ -10,4 +10,4 @@ Besides Thunderbird, Gmail, Hotmail, and Yahoo, *Markdown Here* has been found t
 
 ### Google Groups
 
-*Markdown Here* works in the Google Groups rich-compose box. With one caveat: Digest emails strip all styling. 
+*Markdown Here* works with Google Groups posts. You can use it in the GG rich compose box, or when you're posting via email. One caveat: Digest emails strip all styling. 
