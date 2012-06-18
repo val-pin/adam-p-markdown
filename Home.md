@@ -10,13 +10,4 @@ Besides Thunderbird, Gmail, Hotmail, and Yahoo, *Markdown Here* has been found t
 
 ### Google Groups
 
-*Markdown Here* works in the Google Groups rich-compose box. With caveats:
-
-* When viewing a rendered post with the web interface, all colouring is lost.
-* Digest emails strip all styling. 
-* Per-message emails behave oddly: 
-  * They look great in Thunderbird -- all styling and colours intact.
-  * In Gmail, like the web interface, all colour styling is lost.
-
-Regardless, it's still very nice to be able to do use Markdown backticks and bullets and link syntax while writing Google Groups posts.
-
+*Markdown Here* works in the Google Groups rich-compose box. With one caveat: Digest emails strip all styling. 
