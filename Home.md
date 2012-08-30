@@ -14,6 +14,6 @@ Besides Thunderbird, Gmail, Hotmail, and Yahoo, *Markdown Here* has been found t
 
 ### Evernote
 
-[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the Evernote web interface. 
+[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. 
 
 Caveat: It seems that newlines are stripped out of code blocks, so they display as a single line.
