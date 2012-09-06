@@ -1,6 +1,8 @@
 ## Other places where *Markdown Here* works
 
-Besides Thunderbird, Gmail, Hotmail, and Yahoo, *Markdown Here* has been found to work in...
+Besides Thunderbird, Gmail, Hotmail, and Yahoo.
+
+Please add any that you find, or more info/caveats about the existing ones.
 
 ### Google Groups
 
