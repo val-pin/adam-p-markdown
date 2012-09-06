@@ -2,7 +2,7 @@
 
 Besides Thunderbird, Gmail, Hotmail, and Yahoo.
 
-Please add any that you find, or more info/caveats about the existing ones.
+Please add any that you find, or more info/caveats about the existing ones!
 
 ### Google Groups
 
