@@ -10,7 +10,9 @@ Please add any that you find, or more info/caveats about the existing ones!
 
 ### Wordpress
 
-Discovered by user [Sina Iravanian](https://plus.google.com/116422808039109985732/posts): *Markdown Here* works in the web-based editor for [Wordpress](http://wordpress.com) posts. Caveats and tips (based on observations with default Wordpress styling):
+Discovered by user [Sina Iravanian](https://plus.google.com/116422808039109985732/posts): *Markdown Here* works in the web-based editor for [Wordpress](http://wordpress.com) posts. Here's an example, using the options page sample Markdown: http://adampritch.wordpress.com/2012/09/11/4/
+
+Caveats and tips (based on observations with default Wordpress styling):
 
 * The Wordpress "Preview" button is your friend. What you see there (but not so much in the edit box) is what you get.
 * Hitting `Enter` creates a new paragraph. When writing Markdown, this probably isn't what you want, and it causes some problems, like extra newlines in code blocks. `Shift + Enter` to the rescue -- it enters just a newline instead of a paragraph.
@@ -20,8 +22,13 @@ Discovered by user [Sina Iravanian](https://plus.google.com/11642280803910998573
 * After Markdown-Toggling, fonts don't look right. Some of the syntax in a code block will be non-monospace, and all (or most?) of the normal text will appear in the default Wordpress font, rather than the font set in your *Markdown Here* options. But if you preview or post, the font will back to what's in the options (including the code blocks).
   * There are two instances (that I've found) where the font isn't right even the final post: `<h3>` and `<blockquote>`. Which is pretty weird.
 * Definition lists (`<dl>`) aren't styled quite according to the options CSS.
+* Like with the Yahoo rich controls, if the font (paragraph type) combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
 
-Here's an example, using the options page sample Markdown: http://adampritch.wordpress.com/2012/09/11/4/
+##### Suggested workflow
+
+* Edit directly in the Wordpress edit box. (Because the whitespace-stripping on paste is pretty fatal.)
+* Use `Shift+Enter` rather than `Enter`. 
+* Use Preview liberally.
 
 ### Evernote
 
