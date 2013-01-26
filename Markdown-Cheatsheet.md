@@ -9,6 +9,7 @@ This cheatsheet is specifically *Markdown Here's* version of Github-flavored Mar
 [Links](#links)  
 [Images](#images)  
 [Code and Syntax Highlighting](#code)  
+[Tables](#tables)  
 [Blockquotes](#blockquotes)  
 [Inline HTML](#html)  
 [Horizontal Rule](#hr)  
@@ -58,6 +59,8 @@ Emphasis, aka italics, with *asterisks* or _underscores_.
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
 Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
@@ -65,6 +68,8 @@ Emphasis, aka italics, with *asterisks* or _underscores_.
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
 Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
 
 <a name="lists"/>
 ## Lists
@@ -206,6 +211,43 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
+<a name="tables"/>
+## Tables
+
+Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+
+```no-highlight
+Colons can be used to align columns.
+
+| Tables        | Are           | Coo l |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+```
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Coo l |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 <a name="blockquotes"/>
 ## Blockquotes
 
@@ -228,7 +270,7 @@ Quote break.
 <a name="html"/>
 ## Inline HTML
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well. Here are a couple of common examples:
+You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
 
 ```no-highlight
 <dl>
@@ -238,27 +280,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well. H
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-
-<table>
-  <tr>
-    <th></th>
-    <th>Tables</th>
-    <th>Are</th>
-    <th>Cool</th>
-  </tr>
-  <tr>
-    <th>Zebra</th>
-    <td>Stripes</td>
-    <td>Are</td>
-    <td>Pretty</td>
-  </tr>
-  <tr>
-    <th>Here</th>
-    <td>Is</td>
-    <td>Another</td>
-    <td>Row</td>
-  </tr>
-</table>
 ```
 
 <dl>
@@ -268,29 +289,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well. H
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-
-<table>
-  <tr>
-    <th></th>
-    <th>Tables</th>
-    <th>Are</th>
-    <th>Cool</th>
-  </tr>
-  <tr>
-    <th>Zebra</th>
-    <td>Stripes</td>
-    <td>Are</td>
-    <td>Pretty</td>
-  </tr>
-  <tr>
-    <th>Here</th>
-    <td>Is</td>
-    <td>Another</td>
-    <td>Row</td>
-  </tr>
-</table>
-
-Github-flavored Markdown supports a special table syntax, but *Markdown Here* does not support it yet. [There's an issue for it.](https://github.com/adam-p/markdown-here/issues/13)
 
 <a name="hr"/>
 ## Horizontal Rule
