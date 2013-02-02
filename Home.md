@@ -6,4 +6,4 @@ Check out the **[Markdown Cheatsheet](wiki/Markdown-Cheatsheet)** to discover wh
 
 Sometimes *Markdown Here* is discovered to work in unexpected places. Sometimes imperfectly. Check out the **[Compatibility](wiki/Compatibility)** page for more info.
 
-For cool ways to tweak *Markdown Here* to be just the way you want it, check out the [Tips and Tricks](wiki/Tips-and-Tricks).
+For cool ways to tweak *Markdown Here* to be just the way you want it, check out the **[Tips and Tricks](wiki/Tips-and-Tricks)**.
