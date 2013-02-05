@@ -2,6 +2,10 @@ A collection of reviews of and (non-trivial) blog posts about *Markdown Here*. M
 
 (Okay, this is primarily a vanity page. I'm happy to see people enjoy the thing I made.)
 
+Chrome store reviews: https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa/reviews
+
+Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#reviews
+
 http://drezha.me.uk/post/33018298509/markdown-email-a-holy-grail
 
 http://caseywatts.github.com/2012/12/17/markdown_in_gmail/
