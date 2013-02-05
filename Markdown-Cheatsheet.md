@@ -219,7 +219,7 @@ Tables aren't part of the core Markdown spec, but they are part of GFM and *Mark
 ```no-highlight
 Colons can be used to align columns.
 
-| Tables        | Are           | Coo l |
+| Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
@@ -235,7 +235,7 @@ Markdown | Less | Pretty
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Coo l |
+| Tables        | Are           | Cool |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
