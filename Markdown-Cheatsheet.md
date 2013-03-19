@@ -16,6 +16,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Inline HTML](#html)  
 [Horizontal Rule](#hr)  
 [Line Breaks](#lines)  
+[Youtube videos](#videos)  
 
 <a name="headers"/>
 ## Headers
@@ -349,3 +350,14 @@ This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+
+<a name="videos"/>
+## Youtube videos
+
+They can't be added directly but you can add an image with a link to the video like this:
+
+```no-highlight
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="Link to the DroidAR video" width="240" height="180" border="10" /></a>
+```
