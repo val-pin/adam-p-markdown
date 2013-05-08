@@ -75,6 +75,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
+<a name="lists"/>
 ## Lists
 
 ```no-highlight
