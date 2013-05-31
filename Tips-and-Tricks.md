@@ -22,6 +22,23 @@ If text is pasted from the clipboard with formatting intact, it can negatively i
 
 ...
 
+
+<a name="mainfont" href="#"></a>
+Changing the Main Font (and other overall styles)
+======================
+
+In the "Primary Styling CSS" section of the Markdown Here options page, there is a rule for `.markdown-here-wrapper` (that's empty by default). This rule should be used for styles that you want applied to your entire email (overridden by other styles, of course). 
+
+So, if you wanted Verdana as your default font, you could set this:
+
+```
+.markdown-here-wrapper {
+  font-family: Verdana, sans-serif;
+}
+```
+
+![main font example](https://f.cloud.github.com/assets/425687/588697/75922c86-c992-11e2-8071-f42f40295e3c.gif)
+
 <a name="salutation" href="#"></a>
 Salutation Styling
 ==================
