@@ -6,21 +6,19 @@ Pasting from Clipboard (without tears)
 
 If text is pasted from the clipboard with formatting intact, it can negatively impact the rendering of Markdown (i.e., it can make it super messed up). When pasting into an email that you plan on rendering with Markdown Here, you should try to paste as plain text.
 
-### Windows
+### Windows and Linux
 
 - **Chrome**: Context menu: "Paste as plain text". Hotkey: `Ctrl+Shift+V`.
 - **Firefox**: There doesn't seem to be a menu item. Hotkey: `Ctrl+Shift+V`.
 - **Thunderbird, Postbox**: _Edit_ menu and context menu: "Paste Without Formatting". Hotkey: `Ctrl+Shift+V`.
+
+(Linux: Tested on Xubuntu.)
 
 ### Mac OS X
 
 - **Chrome**: _Edit_ menu and context menu: "Paste and Match Style". Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Firefox**: There doesn't seem to be a menu item. Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Thunderbird, Postbox**: _Edit_ menu and context menu: "Paste Without Formatting". Hotkey: ⇧⌘V (`Shift+Command+V`).
-
-### Linux
-
-...
 
 
 <a name="mainfont" href="#"></a>
