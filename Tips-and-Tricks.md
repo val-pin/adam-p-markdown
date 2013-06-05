@@ -31,7 +31,14 @@ So, if you wanted Verdana as your default font, you could set this:
 
 ```
 .markdown-here-wrapper {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, sans;
+}
+```
+and this (if you want to apply the new font not only to the first row of your tables):
+```
+table tr th, table tr td {
+  font-family: Verdana, sans;
+  ...
 }
 ```
 
