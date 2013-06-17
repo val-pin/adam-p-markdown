@@ -1,4 +1,4 @@
-******* Here  are some Links  most of  the are from wikipedia.org
+******* Here  are some Links  most of  them  are from wikipedia.org
 
  http://en.wikipedia.org/wiki/Internet_layer#Relation_to_OSI_model
 * http://uva.ulb.ac.be/cit_courseware/datacomm/dc_014.htm
