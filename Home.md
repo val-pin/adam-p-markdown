@@ -8,4 +8,4 @@ Sometimes *Markdown Here* is discovered to work in unexpected places. Sometimes 
 
 For cool ways to tweak *Markdown Here* to be just the way you want it, check out the **[Tips and Tricks](wiki/Tips-and-Tricks)**.
 
-Need more convincing? Read some **[Reviews](wiki/Reviews)**.2
+Need more convincing? Read some **[Reviews](wiki/Reviews)**.
