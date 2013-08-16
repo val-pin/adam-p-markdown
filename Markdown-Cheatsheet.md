@@ -86,7 +86,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
   1. Ordered sub-list
 4. And another item.  
    
-   Some text that should be aligned with the above item.
+   Some text that should be aligned with the above item. A trailing space on a line in a list will insert a line break and keep the next line within the same list item.
 
 * Unordered list can use asterisks
 - Or minuses
