@@ -2,7 +2,7 @@ Welcome to the *Markdown Here* wiki!
 
 Should anything else be here? Add it (either here or in another page)!
 
-Check out the **[Markdown Cheatsheet](wiki/Markdown-Cheatsheet)** to discover what you can do in *Markdown Here*.
+Check out the **[Markdown Here Cheatsheet](wiki/Markdown-Here-Cheatsheet)** to discover what you can do in *Markdown Here*. (There is also a [Markdown Cheatsheet](wiki/Markdown-Cheatsheet) that is not specific to *Markdown Here*.)
 
 Sometimes *Markdown Here* is discovered to work in unexpected places. Sometimes imperfectly. Check out the **[Compatibility](wiki/Compatibility)** page for more info.
 
