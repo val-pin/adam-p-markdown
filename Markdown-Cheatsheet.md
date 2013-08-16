@@ -84,10 +84,10 @@ Strikethrough uses two tildes. ~~Scratch this.~~
   * Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
-4. And another item.  
-   
-   Some text that should be aligned with the above item. Two trailing spaces on a line in a list will  
-   insert a line break...  
+4. And another item.  ␤  
+   ␤  
+   Some text that should be aligned with the above item.  ␤  
+   Two trailing spaces on a line in a list will insert a line break...  ␤  
    ...and keep the next line within the same list item.
 
 * Unordered list can use asterisks
@@ -102,7 +102,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
   1. Ordered sub-list
 4. And another item.  
    
-   Some text that should be aligned with the above item.
+   Some text that should be aligned with the above item.  
+   Two trailing spaces on a line in a list will insert a line break...  
+   ...and keep the next line within the same list item.
 
 * Unordered list can use asterisks
 - Or minuses
