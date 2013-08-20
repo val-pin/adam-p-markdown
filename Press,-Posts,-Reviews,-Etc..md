@@ -44,6 +44,8 @@ Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#r
 
 [How to Use Markdown in Email and Google Mail](http://www.planetofthepenguins.com/technology/how-to-use-markdown-in-email-and-google-mail) [planetofthepenguins.com]
 
+[The Tools I Use: Markdown Here](http://randycoulman.com/blog/2013/08/20/markdown-here/) [randycoulman.com]
+
 ## Shorter posts about Markdown Here
 
 https://plus.google.com/106557483623231970995/posts/DgfHXQCnxP4 [Jesse Wilson]
