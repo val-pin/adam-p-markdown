@@ -20,6 +20,8 @@ Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#r
 
 [Markdown Here: Writing HTML In Emails Is Now Much Easier](http://www.smashingmagazine.com/smashing-newsletter-issue-62/#a4) [smashingmagazine.com]
 
+[Review: Write better-formatted messages with Markdown Here](http://www.pcworld.com/article/2037007/review-write-better-formatted-messages-with-markdown-here.html) [pcworld.com]
+
 [Free Chrome extensions power up Gmail](http://www.pcworld.com/article/2037000/free-chrome-extensions-power-up-gmail.html) [pcworld.com]
 
 [G+ Post by Trey Harris](https://plus.google.com/116222833568410151476/posts/ajHcbK5zCpA) [plus.google.com]
@@ -45,6 +47,7 @@ Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#r
 [How to Use Markdown in Email and Google Mail](http://www.planetofthepenguins.com/technology/how-to-use-markdown-in-email-and-google-mail) [planetofthepenguins.com]
 
 [The Tools I Use: Markdown Here](http://randycoulman.com/blog/2013/08/20/markdown-here/) [randycoulman.com]
+
 
 ## Shorter posts about Markdown Here
 
