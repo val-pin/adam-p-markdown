@@ -36,6 +36,22 @@ Caveats and tips (based on observations with default Wordpress styling):
 
 Caveat: It seems that newlines are stripped out of code blocks, so they display as a single line.
 
+
+### Blogger
+
+Like Wordpress, [Blogger](http://www.blogger.com/) inserts `<p>` rather than `<br>` when you hit `Enter`. This causes the extra lines in the raw Markdown, which can adversely affect some rendering. This is especially true of code blocks, where there will end up being a blank line between each line.
+
+The workaround for this is to use `Shift+Enter` instead of `Enter` to insert a newline.
+
+Another problem is that the box around code blocks doesn't look correct. This can be fixed by removing the following line from your "Primary Styling CSS":
+
+```css
+display: inline; /* adam-p: added to fix Yahoo block display */
+```
+
+Examples of these problems can be seen in [issue #89](https://github.com/adam-p/markdown-here/issues/89).
+
+
 ### Postbox
 
 [Postbox](http://www.postbox-inc.com/) is a non-free desktop email client based on Thunderbird, and user [markgoodson](https://github.com/markgoodson) requested that *Markdown Here* [support it](https://github.com/adam-p/markdown-here/issues/30). The Mozilla extension now works with it, but with some major caveats:
