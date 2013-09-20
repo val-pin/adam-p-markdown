@@ -120,7 +120,7 @@ There are two ways to create links.
 
 [You can use numbers for reference-style link definitions][1]
 
-Or leave it empty and use the [link text itself][]
+Or leave it empty and use the [link text itself]
 
 Some text to show that the reference links can follow later.
 
@@ -135,7 +135,7 @@ Some text to show that the reference links can follow later.
 
 [You can use numbers for reference-style link definitions][1]
 
-Or leave it empty and use the [link text itself][]
+Or leave it empty and use the [link text itself]
 
 Some text to show that the reference links can follow later.
 
