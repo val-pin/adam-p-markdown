@@ -4,9 +4,22 @@ Besides Thunderbird, Gmail, Hotmail, and Yahoo.
 
 Please add any that you find, or more info/caveats about the existing ones!
 
-### Google Groups
+### The "Works Great" Bucket
+
+##### Google Groups
 
 *Markdown Here* works with Google Groups posts. You can use it in the GG rich compose box, or when you're posting via email. One caveat: Digest emails strip all styling. 
+
+##### Evernote
+
+[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. 
+
+##### Blogger
+
+As of version 2.9.0, [earlier problems](https://github.com/adam-p/markdown-here/issues/89) are fixed and [Blogger](http://www.blogger.com/) is working well.
+
+Minor caveat: Some syntax highlighting themes with dark backgrounds don't seem to show up properly. There's an example at the bottom of [this post](http://adampersand.blogspot.ca/2013/10/mdh-test-better-blogger.html).
+
 
 ### Wordpress
 
@@ -29,27 +42,6 @@ Caveats and tips (based on observations with default Wordpress styling):
 * Edit directly in the Wordpress edit box. (Because the whitespace-stripping on paste is pretty fatal.)
 * Use `Shift+Enter` rather than `Enter`. 
 * Use Preview liberally.
-
-### Evernote
-
-[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. 
-
-Caveat: It seems that newlines are stripped out of code blocks, so they display as a single line.
-
-
-### Blogger
-
-Like Wordpress, [Blogger](http://www.blogger.com/) inserts `<p>` rather than `<br>` when you hit `Enter`. This causes the extra lines in the raw Markdown, which can adversely affect some rendering. This is especially true of code blocks, where there will end up being a blank line between each line.
-
-The workaround for this is to use `Shift+Enter` instead of `Enter` to insert a newline.
-
-Another problem is that the box around code blocks doesn't look correct. This can be fixed by removing the following line from your "Primary Styling CSS":
-
-```css
-display: inline; /* adam-p: added to fix Yahoo block display */
-```
-
-Examples of these problems can be seen in [issue #89](https://github.com/adam-p/markdown-here/issues/89).
 
 
 ### Postbox
