@@ -2,7 +2,7 @@
 
 Besides Thunderbird, Gmail, Hotmail, and Yahoo.
 
-Please add any that you find, or more info/caveats about the existing ones!
+If you find a new problem (or improvement!), or if you find a site that (almost) works, or if you have workflow suggestions, please edit this wiki page, or create a [Github issue](https://github.com/adam-p/markdown-here/issues), or post to the [MDH Google Group](https://groups.google.com/forum/#!forum/markdown-here).
 
 ### The "Works Great" Bucket
 
