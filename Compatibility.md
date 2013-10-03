@@ -16,32 +16,23 @@ Please add any that you find, or more info/caveats about the existing ones!
 
 ##### Blogger
 
-As of version 2.9.0, [earlier problems](https://github.com/adam-p/markdown-here/issues/89) are fixed and [Blogger](http://www.blogger.com/) is working well.
+As of version 2.9.0, [earlier problems](https://github.com/adam-p/markdown-here/issues/89) are fixed and [Blogger](http://blogger.com/) is working well. Part of the fix came from changes to the default styling. If you've never customized your CSS, you should click the "Reset to Default" button for the "Primary Styling CSS". If you have customized your CSS, you can [take a look at the default CSS](https://github.com/adam-p/markdown-here/blob/master/src/common/default.css) and decide what to take.
 
 Minor caveat: Some syntax highlighting themes with dark backgrounds don't seem to show up properly. There's an example at the bottom of [this post](http://adampersand.blogspot.ca/2013/10/mdh-test-better-blogger.html).
 
+Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting](https://github.com/adam-p/markdown-here/issues/89) that MDH worked with Blogger and for detailing the previous bad behaviour.
 
-### Wordpress
+##### Wordpress
 
-Discovered by user [Sina Iravanian](https://plus.google.com/116422808039109985732/posts): *Markdown Here* works in the web-based editor for [Wordpress](http://wordpress.com) posts. Here's an example, using the options page sample Markdown: http://adampritch.wordpress.com/2012/09/11/4/
+As of version 2.9.0, earlier problems are fixed and [Wordpress](http://wordpress.com/) is working well. Part of the fix came from changes to the default styling. If you've never customized your CSS, you should click the "Reset to Default" button for the "Primary Styling CSS". If you have customized your CSS, you can [take a look at the default CSS](https://github.com/adam-p/markdown-here/blob/master/src/common/default.css) and decide what to take.
 
-Caveats and tips (based on observations with default Wordpress styling):
-
+Caveats and tips:
+* The most annoying this is that, while editing, hitting `Enter` creates a new paragraph and hitting `Shift+Enter` creates a simple newline. The former is easier, but looks weirder while you're editing. *Markdown Here* doesn't mind which you use, but be consistent. 
 * The Wordpress "Preview" button is your friend. What you see there (but not so much in the edit box) is what you get.
-* Hitting `Enter` creates a new paragraph. When writing Markdown, this probably isn't what you want, and it causes some problems, like extra newlines in code blocks. `Shift + Enter` to the rescue -- it enters just a newline instead of a paragraph.
-* When pasting text, leading spaces are lost. This seriously unfortunate, since leading spaces are significant to Markdown and to code.
-  * Trailing spaces are also lost (collapsed to a single space). This is also unfortunate, since two trailing spaces are a forced newline in Markdown.
-* Code blocks get an extra box around them.
-* After Markdown-Toggling, fonts don't look right. Some of the syntax in a code block will be non-monospace, and all (or most?) of the normal text will appear in the default Wordpress font, rather than the font set in your *Markdown Here* options. But if you preview or post, the font will back to what's in the options (including the code blocks).
-  * There are two instances (that I've found) where the font isn't right even the final post: `<h3>` and `<blockquote>`. Which is pretty weird.
-* Definition lists (`<dl>`) aren't styled quite according to the options CSS.
-* Like with the Yahoo rich controls, if the font (paragraph type) combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
+* After rendering, inline code appears in a non-monospace font, but it is correctly monospace in the preview and in the finished post.
+* Like with the Yahoo rich controls, if the paragraph type combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
 
-##### Suggested workflow
-
-* Edit directly in the Wordpress edit box. (Because the whitespace-stripping on paste is pretty fatal.)
-* Use `Shift+Enter` rather than `Enter`. 
-* Use Preview liberally.
+Thanks to [Sina Iravanian](https://plus.google.com/116422808039109985732/posts) for originally discovering that MDH works with Wordpress.
 
 
 ### Postbox
