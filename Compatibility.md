@@ -29,6 +29,7 @@ As of version 2.9.0, earlier problems are fixed and [Wordpress](http://wordpress
 Caveats and tips:
 * The most annoying this is that, while editing, hitting `Enter` creates a new paragraph and hitting `Shift+Enter` creates a simple newline. The former is easier, but looks weirder while you're editing. *Markdown Here* doesn't mind which you use, but be consistent. 
 * The Wordpress "Preview" button is your friend. What you see there (but not so much in the edit box) is what you get.
+* In the Wordpress editor, pasting plain-text is *not* the same as typing. When pasting multi-line text, line breaks (`<br>`) are inserted; when typing, paragraphs (`<p>`) are created. MDH is fine with either, as long as their consistent within the stuff that it's trying to render.
 * After rendering, inline code appears in a non-monospace font, but it is correctly monospace in the preview and in the finished post.
 * Like with the Yahoo rich controls, if the paragraph type combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
 
