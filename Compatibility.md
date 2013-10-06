@@ -23,18 +23,22 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
   * [bootstrap-wysihtml5](#bootstrap-wysihtml5)
 
 
+<a name="the-works-great-bucket"/>
 ### The "Works Great" Bucket
 
+<a name="google-groups"/>
 #### Google Groups
 
 *Markdown Here* works with Google Groups posts. You can use it in the GG rich compose box, or when you're posting via email. One caveat: Digest emails strip all styling. 
 
 
+<a name="evernote"/>
 #### Evernote
 
 [A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. 
 
 
+<a name="blogger"/>
 #### Blogger
 
 As of version 2.9.0, [earlier problems](https://github.com/adam-p/markdown-here/issues/89) are fixed and [Blogger](http://blogger.com/) is working well. Part of the fix came from changes to the default styling. If you've never customized your CSS, you should click the "Reset to Default" button for the "Primary Styling CSS". If you have customized your CSS, you can [take a look at the default CSS](https://github.com/adam-p/markdown-here/blob/master/src/common/default.css) and decide what to take.
@@ -44,6 +48,7 @@ Minor caveat: Some syntax highlighting themes with dark backgrounds don't seem t
 Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting](https://github.com/adam-p/markdown-here/issues/89) that MDH worked with Blogger and for detailing the previous bad behaviour.
 
 
+<a name="google-sites"/>
 #### Google Sites
 
 [Google Sites](https://sites.google.com) seems to use an editor similar to Gmail and Google Groups. I haven't tested a lot, but Markdown Here seems to work very well with it.
@@ -51,6 +56,7 @@ Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting
 You can see some [test pages here](https://sites.google.com/site/markdownheretest/).
 
 
+<a name="wordpress"/>
 #### Wordpress
 
 As of version 2.9.0, earlier problems are fixed and [Wordpress](http://wordpress.com/) is working well. Part of the fix came from changes to the default styling. If you've never customized your CSS, you should click the "Reset to Default" button for the "Primary Styling CSS". If you have customized your CSS, you can [take a look at the default CSS](https://github.com/adam-p/markdown-here/blob/master/src/common/default.css) and decide what to take.
@@ -66,6 +72,7 @@ Thanks to [Sina Iravanian](https://plus.google.com/116422808039109985732/posts) 
 Check out a [test post](http://adampritch.wordpress.com/2013/10/05/markdown-here-test-post/).
 
 
+<a name="postbox"/>
 ### Postbox
 
 [Postbox](http://www.postbox-inc.com/) is a non-free desktop email client based on Thunderbird, and user [markgoodson](https://github.com/markgoodson) requested that *Markdown Here* [support it](https://github.com/adam-p/markdown-here/issues/30). The Mozilla extension now works with it, but with some major caveats:
@@ -77,6 +84,7 @@ Check out a [test post](http://adampritch.wordpress.com/2013/10/05/markdown-here
 * Postbox won't be a first-class client for *Markdown Here*, partly because my trial license for it expires soon. If something breaks, create an issue.
 
 
+<a name="facebook"/>
 ### Facebook
 
 Facebook "Notes" feature users TinyMCE as its editor, so MDH kinda works. But there are caveats.
@@ -87,6 +95,7 @@ Facebook "Notes" feature users TinyMCE as its editor, so MDH kinda works. But th
 * Italics doesn't work in preview/publish. The italicize button on the Notes' formatting toolbar behaves that same broken way as well. `Ctrl+I` works, though. It seems that Notes doesn't allow `<em>` but does allow `<i>`.
 
 
+<a name="google-hangouts"/>
 ### Google Hangouts
 
 The [Google Hangouts](http://www.google.com/hangouts/) web interface supports limited rich editing -- [bold, italics, and underline](https://support.google.com/hangouts/answer/3112005). Markdown Here can format bold and italics in the interface, with caveats:
@@ -96,31 +105,37 @@ The [Google Hangouts](http://www.google.com/hangouts/) web interface supports li
   * Firefox doesn't have this problem. Opera surely does. Not sure about Safari.
 
 
+<a name="editor-tools"/>
 ### Editor Tools
 
 There's a whole class of rich editors for use in web pages that Markdown Here woks with.
 
+<a name="tinymce"/>
 #### TinyMCE
 
 [TinyMCE](http://www.tinymce.com/) is an open source "web based Javascript HTML WYSIWYG editor control". It's used as a rich edit control by these sites (at this time), [among others](http://www.tinymce.com/enterprise/using.php): Evernote, Wordpress, Facebook (Notes). It seems to have lots of customization options for changing the way it works and what formatting it allows and doesn't. Individual sites of reasonable importance with idiosyncratic behaviour should still have a separate section on this page.
 
 TinyMCE inserts `<p>` elements on every `Enter` keypress. Prior to *Markdown Here* version 2.9.0, this would cause extra blank lines in code blocks, break tables, and probably other bad things. MDH's `<p>`-vs-`<br>` detection basically fixes this. (Although it will looks odd when writing, since there's more space between newlines than one expects when writing Markdown.)
 
+<a name="pasting-vs-typing"/>
 ##### Pasting vs. Typing
 
 An annoying TinyMCE oddity is that pasting plain-text is *not* the same as typing. When pasting multi-line text, line breaks (`<br>`) are inserted; when typing, paragraphs (`<p>`) are created. 
 
 This can cause Markdown Here to be confused about what rendering method to use. So, generally speaking, it's best to not mix and match multi-line pasted and typed Markdown. And if you do paste some stuff, try to render it separately using a selection.
 
+<a name="ckeditor"/>
 #### CKEditor
 
 [CKEditor](http://ckeditor.com/) seems to be exactly the same (for our purposes) as TinyMCE -- both in what it is and how it behaves. So read that section.
 
 
+<a name="aloha-editor"/>
 #### Aloha Editor
 
 [Aloha Editor](http://www.aloha-editor.org/) is also an open source rich web editor. Like TinyMCE it inserts `<p>` elements, but unlike TinyMCE it doesn't switch to `<br>` when pasting.  Markdown Here seems to render it quite well.
 
+<a name="redactor"/>
 #### Redactor
 
 [Redactor](http://imperavi.com/redactor/) is a rich editor, like TinyMCE (but not open source). Like TinyMCE it inserts `<p>` elements, but unlike TinyMCE it doesn't switch to `<br>` when pasting. Markdown Here seems to work pretty well with it, with caveats:
@@ -128,14 +143,17 @@ This can cause Markdown Here to be confused about what rendering method to use. 
 * Code blocks have a background colour and an outer border. This can probably be defeated with site-specific rules and `!important`. See the default Primary Styling CSS for an example used with Wordpress.
 * Some other styling stuff.
 
+<a name="hallo"/>
 #### Hallo
 
 [Hallo](http://hallojs.org/) is a simple rich editor. Markdown Here seems to work reasonably well with it.
 
+<a name="wysihtml5"/>
 #### wysihtml5
 
 [wysihtml5](https://github.com/xing/wysihtml5) is also an open-source rich editor. It inserts `<br>` on each `Enter`. Markdown Here seems to work pretty well with it.
 
+<a name="bootstrap-wysihtml5"/>
 ##### bootstrap-wysihtml5
 
 [bootstrap-wysihtml5](http://jhollingworth.github.io/bootstrap-wysihtml5/) is based on wysihtml5 for use with the Twitter Bootstrap web toolkit. Markdown Here works well with it as well.
