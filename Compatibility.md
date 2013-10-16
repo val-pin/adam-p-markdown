@@ -12,6 +12,8 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
 * [Postbox](#postbox)
 * [Facebook](#facebook)
 * [Google Hangouts](#google-hangouts)
+* [Tumblr](#tumblr)
+* [Squarespace](#squarespace)
 * [Editor Tools](#editor-tools)
   * [TinyMCE](#tinymce)
     * [Pasting vs. Typing](#pasting-vs-typing)
@@ -100,6 +102,23 @@ The [Google Hangouts](http://www.google.com/hangouts/) web interface supports li
 * The surrounding `<p>` element makes the little compose box look oddly expanded after rendering. There's no ill effect, though.
 * In Chrome, the chat box has to be popped out of the Gmail page in order for MDH to work. This is because (I think) MDH is loaded into the Gmail page and there are cross-origin restrictions between the top `mail.google.com` page and the `talkgadget.google.com` `iframe` where the chat box is. 
   * Firefox doesn't have this problem. Opera surely does. Not sure about Safari.
+
+<a name="tumblr"/>
+### Tumblr
+
+[Tumblr](http://tumblr.com) is a blogging-ish site and service. 
+
+It looks likes Tumblr strips out inline styles, so none of the styling in MDH will be applied. The formatting types supported by the Tumblr rich formatting toolbar seem to work fine: bold, italics, links, ordered and unordered lists, blockquotes, images. Code blocks will be left intact, but with no syntax highlighting (and inline code is completely stripped). If you work within those constraints, it's usable. [Example post here](http://adam-p.tumblr.com/post/63976503036/markdown-here-paste-test). And it's no worse than Tumblr's optional built-in Markdown renderer, as can be [seen here](http://adam-p.tumblr.com/post/64197896520/mdh-test-using-tumblrs-md-rendering).
+
+Tumblr also has the option to use a plaintext editor that allows the input of raw HTML. If MDH's output is pasted into that, it actually [looks pretty good](http://adam-p.tumblr.com/post/64198046456/mdh-test-pasted-html-into-plaintext-editor). There is an outstanding feature request ([#43](https://github.com/adam-p/markdown-here/issues/43)) for the ability to render to raw HTML text that would enable this workflow.
+
+
+<a name="squarespace"/>
+### Squarespace
+
+[Squarespace](http://squarespace.com) is a non-free site creation and hosting service. 
+
+MDH ought to work, but looks pretty bad. Needs to be investigated.
 
 
 <a name="editor-tools"/>
