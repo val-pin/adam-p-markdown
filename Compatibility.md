@@ -68,6 +68,7 @@ Caveats and tips:
 * After rendering, inline code appears in a non-monospace font, but it is correctly monospace in the preview and in the finished post.
 * The section below on [Pasting vs. Typing](#pasting-vs-typing) applies here.
 * Like with the Yahoo rich controls, if the paragraph type combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
+* In Chrome, MDH doesn't work in the drop-down post editor, due to cross-origin `iframe` restrictions. Click the "Pop-out" link and MDH will become usable in the separate window. Alternatively, use the full editor in the admin interface. (See [issue #124](https://github.com/adam-p/markdown-here/issues/124).)
 
 Thanks to [Sina Iravanian](https://plus.google.com/116422808039109985732/posts) for originally discovering that MDH works with Wordpress.
 
@@ -100,7 +101,7 @@ Facebook "Notes" feature users TinyMCE as its editor, so MDH kinda works. But th
 The [Google Hangouts](http://www.google.com/hangouts/) web interface supports limited rich editing -- [bold, italics, and underline](https://support.google.com/hangouts/answer/3112005). Markdown Here can format bold and italics in the interface, with caveats:
 
 * The surrounding `<p>` element makes the little compose box look oddly expanded after rendering. There's no ill effect, though.
-* In Chrome, the chat box has to be popped out of the Gmail page in order for MDH to work. This is because (I think) MDH is loaded into the Gmail page and there are cross-origin restrictions between the top `mail.google.com` page and the `talkgadget.google.com` `iframe` where the chat box is. 
+* In Chrome, the chat box has to be popped out of the Gmail page in order for MDH to work. This is because (I think) MDH is loaded into the Gmail page and there are cross-origin restrictions between the top `mail.google.com` page and the `talkgadget.google.com` `iframe` where the chat box is. (See [issue #124](https://github.com/adam-p/markdown-here/issues/124).)
   * Firefox doesn't have this problem. Opera surely does. Not sure about Safari.
 
 <a name="tumblr"/>
