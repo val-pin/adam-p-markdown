@@ -69,6 +69,7 @@ Caveats and tips:
 * The section below on [Pasting vs. Typing](#pasting-vs-typing) applies here.
 * Like with the Yahoo rich controls, if the paragraph type combo is clicked, focused-element finding gets busted and Markdown Toggle stops working. See [issue #16](https://github.com/adam-p/markdown-here/issues/16).
 * In Chrome, MDH doesn't work in the drop-down post editor, due to cross-origin `iframe` restrictions. Click the "Pop-out" link and MDH will become usable in the separate window. Alternatively, use the full editor in the admin interface. (See [issue #124](https://github.com/adam-p/markdown-here/issues/124).)
+* It can be disorienting when composing to see extra (paragraph) space when hitting `Enter` once -- it looks like a blank line, but it isn't, and it's still only a single `Enter` for Markdown purposes. Some users find this disorienting, and there's [some discussion here](https://github.com/adam-p/markdown-here/issues/123) about a possible different approach to composing and styling.
 
 Thanks to [Sina Iravanian](https://plus.google.com/116422808039109985732/posts) for originally discovering that MDH works with Wordpress.
 
