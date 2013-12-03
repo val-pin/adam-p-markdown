@@ -3,6 +3,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 ##### Table of Contents  
 
 [Pasting from Clipboard (without tears)](#pasting)  
+[Using SVG for TeX math formulae](#svg)  
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
 [Salutation Styling](#salutation)  
@@ -26,6 +27,27 @@ If text is pasted from the clipboard with formatting intact, it can negatively i
 - **Chrome**: _Edit_ menu and context menu: "Paste and Match Style". Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Firefox**: There doesn't seem to be a menu item. Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Thunderbird, Postbox**: _Edit_ menu and context menu: "Paste Without Formatting". Hotkey: ⇧⌘V (`Shift+Command+V`).
+
+
+<a name="svg" href="#"></a>
+Using SVG for TeX math formulae
+======================
+
+The default Google Charts service that Markdown Here uses for TeX math rendering doesn't provide very crisp images. It was chosen because it was thought (by me) to be the least bad option, privacy-wise (because you're probably already using Google for your email).
+
+However, there are other possibilities, if you're will to accept the implications. Setting this in Markdown Here's TeX math option will give you SVG images:
+
+```no-highlight
+<img src="https://latex.codecogs.com/svg.latex?{urlmathcode}" alt="{mathcode}">
+```
+
+But please note a few important things:
+
+- You're in charge of making sure that you're not violating [CodeCogs' terms of use](http://www.codecogs.com/pages/agreements/termsofuse.php). You should also check out [their privacy policy](http://www.codecogs.com/pages/agreements/privacy_policy.php).
+
+- Understand that CodeCogs will be able to see all of your formulae. They can also do things map your IP address to your formulae. And then they can record the IP addresses of the people that read your email and view the formulae. And so they can draw some conclusions that someone at your IP address working with people at your friends' IP addresses.
+
+For more discussion and technical info, see [issue #144](https://github.com/adam-p/markdown-here/issues/144).
 
 
 <a name="mainfont" href="#"></a>
