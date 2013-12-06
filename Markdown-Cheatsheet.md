@@ -1,388 +1,132 @@
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
-
-Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for.
-
-You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
-
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-[Lists](#lists)  
-[Links](#links)  
-[Images](#images)  
-[Code and Syntax Highlighting](#code)  
-[Tables](#tables)  
-[Blockquotes](#blockquotes)  
-[Inline HTML](#html)  
-[Horizontal Rule](#hr)  
-[Line Breaks](#lines)  
-[Youtube videos](#videos)  
-
-<a name="headers"/>
-## Headers
-
-```no-highlight
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
-```
-
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
-
-<a name="emphasis"/>
-## Emphasis
-
-```no-highlight
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-```
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-
-<a name="lists"/>
-## Lists
-
-(In this example, leading and trailing spaces are shown with with dots: ⋅)
-
-```no-highlight
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-```
-
-1. First ordered list item
-2. Another item
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
-
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-
-<a name="links"/>
-## Links
-
-There are two ways to create links.
-
-```no-highlight
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-```
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<a name="images"/>
-## Images
-
-```no-highlight
-Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-```
-
-Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-
-<a name="code"/>
-## Code and Syntax Highlighting
-
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
-
-```no-highlight
-Inline `code` has `back-ticks around` it.
-```
-
-Inline `code` has `back-ticks around` it.
-
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
-
-```no-highlight
- ```javascript
- var s = "JavaScript syntax highlighting";
- alert(s);
- ```
- 
- ```python
- s = "Python syntax highlighting"
- print s
- ```
- 
- ```
- No language indicated, so no syntax highlighting. 
- But let's throw in a <b>tag</b>.
- ```
-```
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
-But let's throw in a <b>tag</b>.
-```
-
-(Github Wiki pages don't seem to support syntax highlighting, so the above won't be colourful (the strings are not red, for example). Try it out in a *Markdown Here* email or a Github Markdown README or Github Issue -- you can preview a new Issue without submitting it.)
-
-Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
-
-<a name="tables"/>
-## Tables
-
-Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
-
-```no-highlight
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-```
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<a name="blockquotes"/>
-## Blockquotes
-
-```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
-```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
-
-<a name="html"/>
-## Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
-
-```no-highlight
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-```
+**Contents**
+
+ * [Content Server](#content-server)
+  * [API Methods](#api-methods)
+  * [Content Object](#content-object)
+  * [Examples](#examples)
+    * [Create content](#create-content)
+    * [Upload source file](#upload-source-file)
+    * [Upload alternate cover image](#upload-alternate-cover-image)
+    * [Update content record](#upload-content-record)
+  
+## Content Server
+
+A [RESTful API](http://en.wikipedia.org/wiki/Representational_state_transfer) exists for interacting with the CMS. By default the server lives at port 9000 on the localhost.
+
+### API Methods
+
+ * **/content**
+  * POST: Create new Content record
+    * Parameters: Content object
+    * Response: Content object
+ * **/content/:content_id**
+  * GET: Retrieve Content record
+    * Parameters: None
+    * Response: Content object
+  * PUT: Update Content record
+    * Parameters: Key/value pairs of fields to be updated
+    * Response: Content object
+ * **/content/:content_id/source**
+  * PUT: Upload content source file (currently only epub files are supported)
+    * Parameters: Binary file data in request body
+    * Response: CMS file_id for the uploaded file
+  * GET: Download content source file
+    * Parameters: None
+    * Response: Binary file
+ * **/content/:content_id/cover**
+  * PUT: Upload alternate cover image for Content
+    * Parameters: Image data in request body
+    * Response: CMS file_id for the uploaded file
+  * GET: Download alternate cover image
+    * Parameters: None
+    * Response: If file is found, server responds with binary file. If not found, server responds with 404 Not Found response header.
+
+### Content Object
+
+This section describes the structure of a Content object.
+
+#### Common Parameters
+
+All fields must be set when creating a new Content item, except fields marked as optional:
 
 <dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+<dt>user_id</dt>
+<dd>Int. Content owner's numeric user ID from the Byblio WebApp database.</dd>
+<dt>account_id</dt>
+<dd>Int. Content owner's numeric account ID.</dd>
+<dt>library_id</dt>
+<dd>Int. Numeric ID of the library that contains this item.</dd>
+<dt>type</dt>
+<dd>String. Describes the kind of content stored in this record. Values accepted: 'publication', 'model', 'video', 'audio', 'photograph', 'social_media', 'slideshow'.
+</dd>
+<dt>title</dt>
+<dd>
+Object:
+<dl>
+<dt>value</dt>
+<dd>String. Title text value</dd>
+<dt>charset (optional)</dt>
+<dd>String. ISO Character Set for title text</dd>
+</dl>
+</dd>
+<dt>author</dt>
+<dd>
+Object:
+<dl>
+<dt>value</dt>
+<dd>String. Author name</dd>
+<dt>charset (optional)</dt>
+<dd>String. ISO Character Set for author's name</dd>
+</dl>
+</dd>
+<dt>description</dt>
+<dd>
+Object:
+<dl>
+<dt>value</dt>
+<dd>String. Description text</dd>
+<dt>charset</dt>
+<dd>String. ISO Character Set for descripion text</dd>
+</dl></dd>
+<dt>publication_year</dt>
+<dd>String. Date of publication.</dd>
+<dt>publisher</dt>
+<dd>String. Publisher's name.</dd>
+<dt>publication_identifiers (optional)</dt>
+<dd>Array. One or more objects describing the content's publication identifiers (i.e. ISBN):
+<dl>
+<dt>type</dt>
+<dd>String. Identifier name (i.e. 'ISBN').</dd>
+<dt>value</dt>
+<dd>String. Identifier value (i.e. '0060572345')</dd>
+</dl>
+<dt>genre</dt>
+<dd>String. One of the following: 'fiction', 'nonfiction'.</dd>
+<dt>publication_reference (optional)</dt>
+<dd>Array containing one or more strings for Harvard referencing.</dd>
 </dl>
 
-<a name="hr"/>
-## Horizontal Rule
+#### Internal Parameters
 
-```
-Three or more...
+Content records from the CMS will also have the following fields defined. They are not to be altered and are for internal use only:
 
----
+<dl>
+<dt>date_created</dt>
+<dd>Timestamp of when the Content record was created.</dd>
+<dt>last_indexed</dt>
+<dd>Timestamp for when the Content record was last indexed for search by Solr</dd>
+<dt>cover_image_file_id</dt>
+<dd>Internal CMS file_id of the Content item's alternate cover image</dd>
+</dl>
+</dl>
 
-Hyphens
+### Examples
 
-***
 
-Asterisks
 
-___
 
-Underscores
-```
 
-Three or more...
 
----
+## Web Server
 
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
-
-<a name="lines"/>
-## Line Breaks
-
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
-
-Here are some things to try out:
-
-```
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
-```
-
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also begins a separate paragraph, but...  
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
-
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
-
-<a name="videos"/>
-## Youtube videos
-
-They can't be added directly but you can add an image with a link to the video like this:
-
-```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
-
-Or, in pure Markdown, but losing the image sizing and border:
-
-```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-```
+tbd
