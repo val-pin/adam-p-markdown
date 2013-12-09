@@ -92,6 +92,12 @@ Done using --> http://yui.github.io/yuicompressor/
 
 Done using --> http://gsitecrawler.com/
 
+### Web Analytics 
+
+Done adding --> analytics code under /analytics in the root folder of my site
+
+Using --> http://piwik.org/
+
 
 
 
