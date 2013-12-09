@@ -54,11 +54,8 @@ Done configurating --> Expires headers in .htaccess (Apache mod_expires)
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
-
- 
+    ExpiresDefault                                      "access plus 1 month" 
     ExpiresByType text/css                              "access plus 1 year"
-
     ExpiresByType application/json                      "access plus 0 seconds"
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
@@ -94,6 +91,8 @@ Done using --> http://yui.github.io/yuicompressor/
 (Help improve spiderability and ensure that all the important pages on my site are crawled and indexed.)
 
 Done using --> http://gsitecrawler.com/
+
+
 
 
 
