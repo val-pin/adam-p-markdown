@@ -241,7 +241,7 @@ Markdown | Less | Pretty
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool |
+| Tables        | Are           | Cool || Cool |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
