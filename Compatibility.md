@@ -37,7 +37,7 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
 <a name="evernote"/>
 #### Evernote
 
-[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. 
+[A user discovered](https://github.com/adam-p/markdown-here/issues/30#issuecomment-8119861) that Markdown Here works in the [Evernote](https://www.evernote.com) web interface. It works because Evernote uses a somewhat backlevel version of [TinyMCE](#tinymce).
 
 
 <a name="blogger"/>
