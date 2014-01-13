@@ -6,8 +6,32 @@
 * New Field : renderer ( AS text )
 * Save path and stroke details in json format
 
-// json array
-`{"0":{"path":["M", 300, 0, "L", 300, 300],"attr":{"strokeWidth":2,"stroke":"red"}},"1":{"path":["M", 0, 150, "L", 500, 150],"attr":{"strokeWidth":2,"stroke":"red"}}}`
+### json array ###
+
+    { 
+        "0" : { "attr" : { "stroke" : "red",
+              "strokeWidth" : 2
+            },
+          "path" : [ "M",
+              300,
+              0,
+              "L",
+              300,
+              300
+            ]
+        },
+      "1" : { "attr" : { "stroke" : "red",
+              "strokeWidth" : 2
+            },
+          "path" : [ "M",
+              0,
+              150,
+              "L",
+              500,
+              150
+            ]
+        }
+    }
 
 
 
