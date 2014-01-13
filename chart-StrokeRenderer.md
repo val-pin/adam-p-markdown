@@ -7,13 +7,7 @@ custom stroke render field in `charts` :
 * Save path and stroke details in json format
 
 // json array
-`{"0":{
- "path":["M", 300, 0, "L", 300, 300],
- "attr":{"strokeWidth":2,"stroke":"red"}},
-"1":{
- "path":["M", 0, 150, "L", 500, 150],
- "attr":{"strokeWidth":2,"stroke":"red"}
-}}`
+`{"0":{"path":["M", 300, 0, "L", 300, 300],"attr":{"strokeWidth":2,"stroke":"red"}},"1":{"path":["M", 0, 150, "L", 500, 150],"attr":{"strokeWidth":2,"stroke":"red"}}}`
 
 
 
