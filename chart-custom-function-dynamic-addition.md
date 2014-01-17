@@ -31,12 +31,11 @@ Or any other function.
 *  File : script-chart.phtml
 *  Function : new getChartRenderer() required to draw stroke
 
-     var customFunc = function( chart , code ) {
+     `var customFunc = function( chart , code ) {
 
       return new Function("chart" , code )( chart );
 
       }
-
 
 
       function getChartFunction( chartObj ) {  
@@ -46,7 +45,7 @@ Or any other function.
         customFunc( chartObj , chartObj.options.renderer ); 
       }   
     }
-	
+`	
 
 •	This function will be triggered when page loads and filter gets applied via getSeriesAddFunction().
 
