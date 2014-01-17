@@ -35,7 +35,7 @@ Or any other function.
 
 	`var customFunc = function( chart , code ) {
      return new Function("chart" , code )( chart );
-}
+     }
 
 // load chart new Function
 function getChartFunction( chartObj ) {
@@ -44,7 +44,7 @@ function getChartFunction( chartObj ) {
         
         customFunc( chartObj , chartObj.options.renderer ); 
     }   
-}`
+   }`
 	
 
 •	This function will be triggered when page loads and filter gets applied via getSeriesAddFunction().
