@@ -31,13 +31,9 @@ Or any other function.
 *  File : script-chart.phtml
 *  Function : new getChartRenderer() required to draw stroke
 
-`   // chart new function code here
-
-   var customFunc = function( chart , code ) {
+`   var customFunc = function( chart , code ) {
       return new Function("chart" , code )( chart );
    }
-
-   // load chart new Function
 
    function getChartFunction( chartObj ) {
     
