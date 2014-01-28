@@ -7,6 +7,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
 [Salutation Styling](#salutation)  
+[Using Header Anchor Links](#header-anchors)
 
 <a name="pasting" href="#"></a>
 Pasting from Clipboard (without tears)
@@ -131,3 +132,9 @@ If you want to style the salutation of your email differently from the rest of t
   color: red;
 }
 ```
+
+<a name="header-anchors" href="#"></a>
+Using Header Anchor Links
+=========================
+
+[Stub. Someone (like me or Casey) should fill this in. Also, this section should probably not be at the bottom of the page -- it should probably be second or third.]
