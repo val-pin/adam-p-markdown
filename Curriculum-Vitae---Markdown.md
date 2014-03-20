@@ -33,7 +33,7 @@
 **Cargo:** `Analista de Sistemas Sênior`<br />
 **Empresa:** `P. B. Lopes & Cia. Ltda`<br />
 **Período:** `02/1995 – 12/2006`<br />
-** Atividades:**
+**Atividades:**
 - Desenvolvimento e implantação de sistema para auto center MICHELIN. - - Implantação do sistema ERP Datasul EMS2 em concessionário de veículos SCANIA. Desenvolvimento específico de módulos para controle de concessionário de veículos SCANIA. Controle operacional de oficina mecânica contendo: ordens de serviço; requisições/devoluções de peças para oficina; controle de tarefas automatizadas por código de barras; disponibilidade, aproveitamento e eficiência de mecânicos; faturamento de balcão; controle operacional de vendas; mapa de faturamento; gestão de garantias, etc;
 - Desenvolvimento de módulo para pecuária integrado ao ERP Datasul EMS2 para a fazenda Dona Amélia: controle de clientes e fornecedores segmentados, controle de plantel de gado (famílias, raças, grau de sangue, árvore genealógica, provas de ganho de peso, avaliação visual, vistorias técnicas, controle de pelagem, etc.
 
