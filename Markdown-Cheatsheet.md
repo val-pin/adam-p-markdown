@@ -1,9 +1,9 @@
 ***
-#### Test
+# Test
 ***
 text
 
 ***
-### Test 2
+## Test 2
 ***
 moar text
