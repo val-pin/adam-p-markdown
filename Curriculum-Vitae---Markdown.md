@@ -11,7 +11,7 @@
 <br />
 ##Objetivo
     Busco crescimento profissional e conhecimento no mundo WEB para futuros projetos.
-<br />
+
 ##Formação Acadêmica
 **Estabelecimento:** `UNITINS`<br />
 **Grau:** `Graduação`<br />
