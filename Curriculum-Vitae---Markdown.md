@@ -32,6 +32,7 @@ ___
 <br />
 - Desenvolvimento e implantação de sistema de recursos humanos, contas a pagar, contas a receber, caixa, bancos e laboratório químico.
 ___
+<br />
 **Cargo:** `Analista de Sistemas Sênior`<br />
 **Empresa:** `P. B. Lopes & Cia. Ltda`<br />
 **Período:** `02/1995 – 12/2006`<br />
