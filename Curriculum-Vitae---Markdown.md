@@ -1,8 +1,7 @@
 #Curriculum Vitae
-<br>
+
 ##Informações Pessoais
-___
-**Nome:** `Odair Batista`<br />
+**Nome:** `Odair Batista`
 **Endereço:** `Rua Yonessaki Ueda, 150`<br />
 **Bairro:** `Vale de San Fernando`<br />
 **CEP:** `86040-440`<br />
