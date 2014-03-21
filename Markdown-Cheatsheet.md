@@ -7,7 +7,7 @@ text
 ## Test 2
 ***
 moar text
-* * asc
+** asc
 * asc
 * sc
 * s
