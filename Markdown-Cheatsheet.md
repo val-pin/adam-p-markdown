@@ -8,7 +8,7 @@ text
 ***
 moar text
 * asc
-* asc
+ * asc
 * sc
 * s
 c
