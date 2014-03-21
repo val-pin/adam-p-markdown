@@ -8,8 +8,8 @@ text
 ***
 moar text
 
-asc
-asc
-sc
-s
+* asc
+* asc
+* sc
+* s
 c
