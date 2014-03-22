@@ -2,7 +2,7 @@ This is intended as a quick reference and showcase. For more complete info, see 
 
 Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for.
 
-You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
+PLEASE DO NOT EDIT THIS PAGE! You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
 
 ##### Table of Contents  
 [Headers](#headers)  
