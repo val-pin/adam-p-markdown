@@ -31,7 +31,6 @@ PLEASE DO NOT EDIT THIS PAGE! You can play around with Markdown on our [live dem
 
 Alternatively, for H1 and H2, an underline-ish style:
 
-```
 Alt-H1
 ======
 
