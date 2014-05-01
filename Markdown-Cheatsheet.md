@@ -39,7 +39,6 @@ Alt-H2
 ```
 
 # H1
-asdasd
 ## H2
 ### H3
 #### H4
@@ -78,9 +77,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 <a name="lists"/>
 ## Lists
-one
-two
-three
 
 (In this example, leading and trailing spaces are shown with with dots: ⋅)
 
