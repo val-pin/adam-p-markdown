@@ -53,7 +53,7 @@ Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting
 <a name="google-sites"/>
 #### Google Sites
 
-[Google Sites](https://sites.google.com) seems to use an editor similar to Gmail and Google Groups. One caveat is that once a page is saved and re-edited, it can no longer be converted back to Markdown for further editing.
+[Google Sites](https://sites.google.com) seems to use an editor similar to Gmail and Google Groups.
 
 You can see some [test pages here](https://sites.google.com/site/markdownheretest/).
 
