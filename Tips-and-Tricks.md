@@ -3,6 +3,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 ##### Table of Contents  
 
 [Pasting from Clipboard (without tears)](#pasting)  
+[Footnotes](#footnotes)  
 [Using SVG for TeX math formulae](#svg)  
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
@@ -28,6 +29,51 @@ If text is pasted from the clipboard with formatting intact, it can negatively i
 - **Chrome**: _Edit_ menu and context menu: "Paste and Match Style". Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Firefox**: There doesn't seem to be a menu item. Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Thunderbird, Postbox**: _Edit_ menu and context menu: "Paste Without Formatting". Hotkey: ⇧⌘V (`Shift+Command+V`).
+
+
+<a name="footnotes" href="#"></a>
+Footnotes
+======================
+
+Below is a copy-paste of a workaround described in the [feature request/issue](https://github.com/adam-p/markdown-here/issues/94) for adding footnotes:
+
+I thought of a bit of a hack you can use to emulate your footnotes: put inline HTML `<sup>` tags<sup>1</sup>. What I just did there looks like this: `<sup>1</sup>`. Then you can put a numbered list<sup>2</sup> at the bottom with the actual footnotes. 
+
+The numbered list in your original email had a larger left-side margin than mine will, but you could modify your "Primary Styling CSS" in the MDH options to and add something like `margin-left: 10em;` to the `ol` rule. But then it'd be like that for all your numbered lists.
+
+You also have the carriage-return-ish icon in your footnotes at the bottom, but they're not links that lead back to the anchor, so... maybe you don't need them? If you want to add them by hand you can use the HTML entity<sup>3</sup> `&crarr;`. Like so: &crarr;
+
+I haven't been using the square brackets around the footnote super numbers because there's a danger of them ending up being reference-style MD links<sup>4</sup>. Like this<sup>[11]</sup> but not like this<sup>[12]</sup>.
+
+[11]: http://markdown-here.com
+
+Anyway, maybe this will help you and maybe it won't. It's probably more hassle than you're happy with. I'll include the raw version of this email below so that you can see it.
+
+1. Gratuitous link to info about the `<sup>` tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+2. [MD cheatsheet entry for lists](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-lists)
+3. [List of HTML entities](http://www.w3schools.com/tags/ref_symbols.asp)
+4. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
+
+---
+
+```
+I thought of a bit of a hack you can use to emulate your footnotes: put inline HTML `<sup>` tags<sup>1</sup>. What I just did there looks like this: `<sup>1</sup>`. Then you can put a numbered list<sup>2</sup> at the bottom with the actual footnotes. 
+
+The numbered list in your original email had a larger left-side margin than mine will, but you could modify your "Primary Styling CSS" in the MDH options to and add something like `margin-left: 10em;` to the `ol` rule. But then it'd be like that for all your numbered lists.
+
+You also have the carriage-return-ish icon in your footnotes at the bottom, but they're not links that lead back to the anchor, so... maybe you don't need them? If you want to add them by hand you can use the HTML entity<sup>3</sup> `&crarr;`. Like so: &crarr;
+
+I haven't been using the square brackets around the footnote super numbers because there's a danger of them ending up being reference-style MD links<sup>4</sup>. Like this<sup>[11]</sup> but not like this<sup>[12]</sup>.
+
+[11]: http://markdown-here.com
+
+Anyway, maybe this will help you and maybe it won't. It's probably more hassle than you're happy with. I'll include the raw version of this email below so that you can see it.
+
+1. Gratuitous link to info about the `<sup>` tag: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+2. [MD cheatsheet entry for lists](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-lists)
+3. [List of HTML entities](http://www.w3schools.com/tags/ref_symbols.asp)
+4. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
+```
 
 
 <a name="svg" href="#"></a>
