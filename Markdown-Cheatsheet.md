@@ -1,114 +1,388 @@
-# Informationsarten
+This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
-## Flüchtig vs. Persistent
-* **Flüchtige Informationen** werden dem Benutzer einmalig signalisiert und nicht gespeichert. Die Information ist nach der einmaligen Darstellung nicht mehr abrufbar.
+Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for.
 
-* **Transiente Informationen** sind im Prinzip auch flüchtig, werden aber für einen längeren Zeitraum zwischengespeichert (aber nie persistiert). Dies sind z.B. Informationen die auf eine Session begrenzt zur Verfügung stehen.
+PLEASE DO NOT EDIT THIS PAGE! You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
 
-* **Persistente Informationen** werden dauerhaft (bzw. für ein beliebiges Zeitintervall) im System vorgehalten und der Benutzer hat die Möglichkeit diese Information erneut abzurufen.
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+[Lists](#lists)  
+[Links](#links)  
+[Images](#images)  
+[Code and Syntax Highlighting](#code)  
+[Tables](#tables)  
+[Blockquotes](#blockquotes)  
+[Inline HTML](#html)  
+[Horizontal Rule](#hr)  
+[Line Breaks](#lines)  
+[Youtube videos](#videos)  
 
-* **Hybride Informationen** werden mit einem Medium flüchtig dargestellt und können an einer anderen Stelle persistent vorgehalten werden.
+<a name="headers"/>
+## Headers
 
-## Push vs. Pull
-* **Push Informationen** werden dem Benutzer direkt zugestellt. Das System ist dafür verantwortlich, dass der Benutzer aktiv mit der Information versorgt wird.
-* **Pull Informationen** werden vom Benutzer abgerufen, das System stellt diese nur an einer definierten Stelle zur Verfügung.
-* Auch hier ist ein **Hybrid denkbar**, der bspw. per Push über die Existenz informiert, Detailinformationen werden aber vom Benutzer per Pull abgeholt. 
+```no-highlight
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
-## Prominenz
-* Ein **Toast** stellt Informationen zeitweise zur Verfügung und bringt diese kurzzeitig ins Blickfeld des Benutzers. Dies eignet sich primär für flüchtige Informationen.
-* Informationen können zentral in der **Hall** dargestellt werden. Dies eignet sich besonders dazu dem Benutzer eine Orientierung über die Räume und deren Aktivitäten zu bieten.
-* Auf einem **Splashscreen** können dem Benutzer ebenfalls zentral Informationen bereit gestellt werden. Dieser ist vor allem dafür geeignet dem Benutzer „Komfortinformationen“ zu bieten, um das Arbeiten mit dem System zu erleichtern. Hier ist z.B. eine Liste mit den zuletzt genutzten Räumen oder mit Aktivitäten anderer (in Beziehung stehender) Nutzer denkbar.
-* **Infoseiten** bieten weitere Informationen zu Elementen. So lassen sich z.B. Änderungshistorien darstellen.
-* In **Teaserbereichen** können Sekundärinformationen im System dargestellt werden. Diese können kontextsensitiv sein, müssen es aber nicht.
-* Die **Benutzerliste** ist ein spezieller Teaser. In ihr werden alle Benutzer eines Raumes (genauer: mit Zugangsberechtigung zu diesem) dargestellt. Die Benutzerliste ist in jedem Raum sichtbar.  
-* Im **Contentbereich** sollten immer dann für Informationen dargestellt werden, wenn sie direkt mit Nutzerinteraktion zusammenhängen bzw. für den laufenden Arbeitsvorgang wichtig sind. Diese können dort zentral oder auch kontextsensitiv dargestellt werden.
+Alternatively, for H1 and H2, an underline-ish style:
 
-# Aktionen in CURE
-## Benutzer
-### Benutzer registriert sich
-Diese Information ist für das Groß der Nutzer relativ unbedeutend. Die Information kann aber dazu helfen das System lebendiger zu gestalten.
-### Benutzer loggt sich ein
-Der Benutzerlogin ist auf den ersten Blick auch eher unbedeutend. Für andere Benutzer, die mit dem Benutzer aufgrund von Relationen (man befindet sich im selben Raum, man bearbeitet ein Dokument, welches zuletzt von einem anderen Nutzer bearbeitet wurde, etc.) interagieren möchten, kann die Information aber sehr wichtig sein.
-### Benutzer loggt sich aus
-Ähnlicher Informationsgehalt wie der Benutzerlogin. Einzig die Tatsache, dass man Benutzer nicht beliebig darauf hinweisen möchte, dass das System nicht mehr genutzt wird, ist zu beachten. Der Benutzerlogin hat mehr „Werbegehalt“ für das System. Für interagierende Nutzer ist der Informationsgehalt aber ähnlich anzusiedeln wie beim Login.
-### Benutzer chattet
-Ein Benutzer der im Chat aktiv ist kann für andere Benutzer interessant sein. Auch die Information, dass ein Benutzer für den Chat bereitsteht ist wichtig (es sei denn, dies sind per Definition alle eingeloggten Benutzer). Interessant ist auch, mit welchen Benutzern sich dieser im Gespräch befindet, da dies stattfindende Gruppendynamiken aufzeigen kann. Ein Beispiel: Drei Mitglieder eines Raumen unterhalten sich im Chat. Ein vierter Benutzer befindet sich gerade in einem anderen Raum und liest eine Wikiseite. Wenn er die stattfindende Unterhaltung „sehen“ könnte, wäre dies eine sehr interessante Information.
+Alt-H1
+======
 
-## Räume
-### Benutzer bekommt Zugriff auf einen Raum
-Ein Benutzer bekommt einen Schlüssel für einen Raum ausgestellt und kann ab jetzt mit diesem interagieren.   Diese Information ist interessant für andere Benutzer in diesem Raum.
-### Benutzer betritt einen Raum
-Ein Benutzer betritt einen Raum und steht somit anderen Benutzern im Raum für direkte Interaktion zur Verfügung. Nutzer sollten immer ein ausgeprägtes „Gefühl“ darüber haben, wer sich außer Ihnen in einem Raum aufhält. 
-### Benutzer verlässt einen Raum
-Ein Benutzer wechselt in einen anderen Raum, schließt seine Session oder ähnliches. Er steht dem verlassenden Raum somit nicht für eine Interaktion zur Verfügung. Die Benutzergruppe muss daher auf das Verlassen aufmerksam gemacht werden. 
- gibt seinen Schlüssel zu einem Raum zurück. Diese Information ist für die Nutzer des Raumes interessant, insbesondere aber für den Benutzer, der den Schlüssel angelegt hat bzw. den Raum administriert.
-### Benutzer legt einen Raum an
-Ein Benutzer legt einen neuen Raum an.  Diese Information ist besonders bei Unterräumen interessant für alle Benutzer des Hauptraums.
-### Benutzer bearbeitet einen Raum
-Die Information, dass ein Raum von Benutzer X bearbeitet wird ist essentiell für alle Benutzer, die sich gerade in dem Raum befinden, aber auch für alle anderen Teilnehmer mit Zugang zu diesem Raum sehr interessant. Beginnen andere Benutzer zeitgleich mit der Bearbeitung des Raumes, so wird die Information von kritischer Wichtigkeit.
-### Benutzer löscht einen Raum
-Hier ist der Informationsbedarf entsprechend dem Bearbeiten oder sogar noch höher. Der Konflikt, dass ein Raum gelöscht wird, in dem sich noch Nutzer befinden oder in dem Unterräume existieren erfordert ein sehr gutes Informationskonzept. 
-### Benutzer verliert Zugriff auf einen Raum
-Ein Benutzer gibt seinen Schlüssel zu einem Raum zurück oder bekommt diesen entzogen. Diese Information ist für die Nutzer des Raumes interessant, insbesondere aber für den Benutzer, der den Schlüssel angelegt hat bzw. den Raum administriert.
+Alt-H2
+------
+```
 
-## Ordner
-### Benutzer öffnet einen Ordner
-Ein Benutzer öffnet einen Ordern, um den Dateiinhalt zu betrachten. Diese Information ist interessant für Benutzer, die den Ordner bearbeiten möchten.
-### Benutzer legt einen Ordner an
-Das Anlegen eines Ordners ist eine interessante Information für alle, die einen Zugang zu dem entsprechenden Raum haben.
-### Benutzer bearbeitet einen Ordner
-Das Bearbeiten ist eine wichtige Information für alle, die sich in dem Ordner aufhalten und insbesondere für die Benutzer, die den Raum ebenfalls bearbeiten.
-### Benutzer löscht einen Ordner
-Wird ein Ordner gelöscht, so ist dies interessant für alle Benutzer, die Zugriff auf den Raum haben.
-### Benutzer lädt Datei in Ordner
-Neue Dateien in einem Ordner sind interessant für alle Benutzer, die Zugriff auf den Raum haben.
-### Benutzer entfernt Datei aus Ordner
-Hier ist der Informationsbedarf entsprechend dem Bearbeiten oder sogar noch höher. Der Konflikt, dass ein Ordner gelöscht wird, in dem sich noch Nutzer befinden oder Dateien abgelegt sind erfordert ein sehr gutes Informationskonzept. 
-### Benutzer schließt einen Ordner
-Wichtig für Benutzer, die einen Ordner bearbeiten (möchten).
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
-## Wikiseiten
-### Seite anlegen
-Legt ein Benutzer einen neue Wikiseite innerhalb eines Raumes an, so ist dies vermutlich eine wichtige Information für alle Teilnehmer. Hier könnte es sogar die Möglichkeit geben, dass der Autor entscheidet, wie wichtig die Informationen für andere Nutzer sind und in welchem Umfang diese informiert werden.
-### Seite editieren
-Eine geänderte Wikiseite enthält potentiell neue Informationen für alle Benutzer des Raumes. Wie bei der Neuanlage eines Raumes, so kann auch hier evtl. der Autor entscheiden, wie die Nutzer informiert werden. 
-### Seite löschen
-Wird eine Wikiseite gelöscht, so müssen alle Betrachter dieser Seite frühzeitig informiert werden. Auch für alle anderen Mitglieder des Raumes ist diese Information wichtig.
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
+
+<a name="emphasis"/>
+## Emphasis
+
+```no-highlight
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+```
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-#Anwendungsmatrix
+<a name="lists"/>
+## Lists
 
-* Spalte 1: F=Flüchtig, T=Transient, P=Persistent, H=Hybrid
-* Spalte 2: >=Push, <=Pull, H=Hybrid
-* Spalte 3: T=Toast, H=Hall, S=Splashscreen, I=Infoseite, R=Teaser, B=Benutzerliste, C=Content*
+(In this example, leading and trailing spaces are shown with with dots: ⋅)
 
-|     Benutzergruppe |  Alle   | Zugriff     | Geöffnet          | In Bearbeitung |
-|--------------------|---------|-------------|-------------------|----------------|
-| Aktion             |         |             |                   |                |
-| **Registrierung**  |         |             |                   |                |
-| Login              | F > T   |             | T > B             |                |
-| Logout             |         |             | T > B             |                |
-| Chatten            |         | H H SR      | F > B             |                |
-|                    |         |             |                   |                |
-| **Raumaktionen**   |         |             |                   |                |
-| Zugriff vergeben   |         | H H IR      | P > B             |                |
-| Raum betreten      |         |             | T > B             | T > C          |
-| Raum verlassen     |         | P < I       | T > B             | F > C          |
-| Raum anlegen       | P < H   |             |                   |                |
-| Raum bearbeiten    |         |             |                   | T > C          |
-| Raum löschen       |         | T < S       | T > C             | T > C          |
-| Zugriff verlieren  |         | TP H SI     | T > B             | T > C          |
-|                    |         |             |                   |                |
-| **Ordneraktionen** |         |             |                   |                |
-| Ordner öffnen      |         |             |                   |                |
-| Ordner anlegen     |         | T > R       |                   |                |
-| Ordner bearbeiten  |         |             | T > C             | T > C          |
-| Ordner löschen     |         |             | T > C             | T > C          |
-| Datei hochladen    |         | T > R       |                   |                |
-| Datei entfernen    |         | P < I       | T > C             |                |
-| Ordner schließen   |         |             |                   |                |
-|                    |         |             |                   |                |
-| **Wikiseiten**     |         |             |                   |                |
-| Seite anlegen      |         | H H IR      |                   |                |
-| Seite editieren    |         | H H IR      | T > C             | T > C          |
-| Seite löschen      |         | H H IR      | T > C             | T > C          |
+```no-highlight
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+```
+
+1. First ordered list item
+2. Another item
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+
+<a name="links"/>
+## Links
+
+There are two ways to create links.
+
+```no-highlight
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+```
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
+<a name="images"/>
+## Images
+
+```no-highlight
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+```
+
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+<a name="code"/>
+## Code and Syntax Highlighting
+
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+
+```no-highlight
+Inline `code` has `back-ticks around` it.
+```
+
+Inline `code` has `back-ticks around` it.
+
+Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+
+<pre lang="no-highlight"><code>```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+```
+</code></pre>
+
+
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+```
+No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
+But let's throw in a <b>tag</b>.
+```
+
+
+<a name="tables"/>
+## Tables
+
+Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+
+```no-highlight
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+```
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+<a name="blockquotes"/>
+## Blockquotes
+
+```no-highlight
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+```
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+
+<a name="html"/>
+## Inline HTML
+
+You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
+
+```no-highlight
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+```
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+<a name="hr"/>
+## Horizontal Rule
+
+```
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+```
+
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+
+<a name="lines"/>
+## Line Breaks
+
+My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
+
+Here are some things to try out:
+
+```
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+```
+
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also begins a separate paragraph, but...  
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+
+(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+
+<a name="videos"/>
+## Youtube videos
+
+They can't be added directly but you can add an image with a link to the video like this:
+
+```no-highlight
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+```
+
+Or, in pure Markdown, but losing the image sizing and border:
+
+```no-highlight
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+```
+
+Referencing a bug by #bugID in your git commit links it to the slip. For example #1. 
