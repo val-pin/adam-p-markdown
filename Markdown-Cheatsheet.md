@@ -78,9 +78,9 @@ Wird eine Wikiseite gelöscht, so müssen alle Betrachter dieser Seite frühzeit
 
 #Anwendungsmatrix
 
-Spalte 1: F=Flüchtig, T=Transient, P=Persistent, H=Hybrid
-Spalte 2: >=Push, <=Pull, H=Hybrid
-Spalte 3: T=Toast, H=Hall, S=Splashscreen, I=Infoseite, R=Teaser, B=Benutzerliste, C=Content*
+* Spalte 1: F=Flüchtig, T=Transient, P=Persistent, H=Hybrid
+* Spalte 2: >=Push, <=Pull, H=Hybrid
+* Spalte 3: T=Toast, H=Hall, S=Splashscreen, I=Infoseite, R=Teaser, B=Benutzerliste, C=Content*
 
 |     Benutzergruppe |  Alle   | Zugriff     | Geöffnet          | In Bearbeitung |
 |--------------------|---------|-------------|-------------------|----------------|
