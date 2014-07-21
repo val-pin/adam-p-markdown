@@ -19,7 +19,7 @@ install
 ```sh
  sudo apt-get install git vim corkscrew
 ```
-:#NOTE: corkscrew installation is used for proxies, and is optional, but recommended.
+NOTE: corkscrew installation is used for proxies, and is optional, but recommended.
 2. Setup your home directory with your github account ssh keys.  Lets assume these are called git_keys (private key) and git_keys.pub (public key).
 ```sh
   mkdir ~/.ssh
