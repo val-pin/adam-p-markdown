@@ -4,7 +4,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 
 [Pasting from Clipboard (without tears)](#pasting)  
 [Footnotes](#footnotes)  
-[Using SVG for TeX math formulae](#svg)  
+[Using other TeX math formulae renderers](#tex)  
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
 [Salutation Styling](#salutation)  
@@ -77,12 +77,19 @@ Anyway, maybe this will help you and maybe it won't. It's probably more hassle t
 
 
 <a name="svg" href="#"></a>
-Using SVG for TeX math formulae
+<a name="text" href="#"></a>
+Using other TeX math formulae renderers
 ======================
 
-The default Google Charts service that Markdown Here uses for TeX math rendering doesn't provide very crisp images. It was chosen because it was thought (by me) to be the least bad option, privacy-wise (because you're probably already using Google for your email).
+The default Google Charts service that Markdown Here uses for TeX math rendering doesn't support all math symbols (like [`\cong`](https://github.com/adam-p/markdown-here/issues/199)), and doesn't provide very crisp images. It was chosen because it was thought (by me) to be the least bad option, privacy-wise (because you're probably already using Google for your email). However, there are other possibilities, if you're willing to accept the implications. 
 
-However, there are other possibilities, if you're will to accept the implications. Setting this in Markdown Here's TeX math option will give you SVG images:
+[CodeCogs](http://www.codecogs.com/) supports a wider range of symbols (I think) and provides more rendering targets. You can fool around with its [equation editor here](http://www.codecogs.com/latex/eqneditor.php). To use CodeCogs to produce PNG images, set this in Markdown Here's "TeX Mathematical Formulae Support" option:
+
+```no-highlight
+<img src="https://latex.codecogs.com/png.latex?{urlmathcode}" alt="{mathcode}">
+```
+
+Using this will give you nice smooth SVG images, but note that they will get stripped out of email:
 
 ```no-highlight
 <img src="https://latex.codecogs.com/svg.latex?{urlmathcode}" alt="{mathcode}">
