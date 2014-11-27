@@ -9,6 +9,7 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
   * [Blogger](#blogger)
   * [Google Sites](#google-sites)
   * [Wordpress](#wordpress)
+  * [Freshdesk](#freshdesk)
 * [Postbox](#postbox)
 * [Facebook](#facebook)
 * [Google Hangouts](#google-hangouts)
@@ -75,6 +76,11 @@ Thanks to [Sina Iravanian](https://plus.google.com/116422808039109985732/posts) 
 
 Check out a [test post](http://adampritch.wordpress.com/2013/10/05/markdown-here-test-post/).
 
+
+<a name="Freshdesk"/>
+#### Freshdesk
+
+[@rfay](https://github.com/rfay) [reports](https://github.com/adam-p/markdown-here/issues/227) that Markdown Here works great with the [Freshdesk](http://freshdesk.com/) ticket editor.
 
 <a name="postbox"/>
 ### Postbox
