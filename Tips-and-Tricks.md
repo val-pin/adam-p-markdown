@@ -77,7 +77,7 @@ Anyway, maybe this will help you and maybe it won't. It's probably more hassle t
 
 
 <a name="svg" href="#"></a>
-<a name="text" href="#"></a>
+<a name="tex" href="#"></a>
 Using other TeX math formulae renderers
 ======================
 
