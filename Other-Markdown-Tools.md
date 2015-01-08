@@ -13,3 +13,4 @@ If you would like a tool added to this list [email me](mailto:pritchard.adam@gma
 * [PageDown](https://code.google.com/p/pagedown/) (and [PageDown Extra](https://github.com/jmcmanus/pagedown-extra))
 * [markdown-it](https://github.com/markdown-it/markdown-it)
 * [Gitdown](https://github.com/gajus/gitdown): GitHub markdown preprocessor
+* [reMarked.js](https://github.com/leeoniya/reMarked.js): HTML-to-Markdown processor
