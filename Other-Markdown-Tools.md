@@ -15,3 +15,4 @@ If you would like a tool added to this list [email me](mailto:pritchard.adam@gma
 * [markdown-it](https://github.com/markdown-it/markdown-it)
 * [Gitdown](https://github.com/gajus/gitdown): GitHub markdown preprocessor
 * [reMarked.js](https://github.com/leeoniya/reMarked.js): HTML-to-Markdown processor
+* [Kramed](https://github.com/GitbookIO/kramed): Fork of Marked
