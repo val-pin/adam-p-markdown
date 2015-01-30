@@ -3,6 +3,7 @@ If you would like a tool added to this list [email me](mailto:pritchard.adam@gma
 ## Tools
 
 * [StackEdit](https://stackedit.io): In-browser MD document editor
+* [Minimalist Online Markdown Editor](http://markdown.pioul.fr/)
 
 ## Libraries
 
