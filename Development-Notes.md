@@ -75,6 +75,9 @@ Postbox uses an annoying old version of Gecko (v7, based on `userAgent`), which 
 * Maybe rendered output should sometimes use `<br>` instead of `<p>` elements? I don't have any solid examples, but it seems to me that some clients might choke if presented with `<p>`-centric HTML when they only edit `<br>` content. Now that we count `<br>`-vs-`<p>` during HTML-to-text conversion, maybe we could use that information to alter the output to match.
   * But it's hard to justify that kind of change with no evidence of benefit.
 
+### The limitations of email.
+
+* [Gmail's HTML Tag Whitelist](https://quip.com/aO0pAZO9m9SG)
 
 ## Better HTML-to-Text
 
