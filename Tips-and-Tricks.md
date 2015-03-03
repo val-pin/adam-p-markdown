@@ -8,6 +8,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
 [Salutation Styling](#salutation)  
+[Creating more complex tables](#tables)
 [Using Header Anchor Links](#header-anchors)
 
 <a name="pasting" href="#"></a>
@@ -185,6 +186,22 @@ If you want to style the salutation of your email differently from the rest of t
   color: red;
 }
 ```
+
+
+<a name="tables" href="#"></a>
+Creating more complex tables<a name="tables" href="#"></a>
+Creating more complex tables
+======================
+
+There is a [feature request](https://github.com/adam-p/markdown-here/issues/176) for adding the ability to span cells across rows and columns, but it hasn't yet been implemented. 
+
+Probably the best way to do rowspan and colspan right now is to use this [online HTML table generator](http://www.tablesgenerator.com/html_tables) to create your table, and then paste it into your email (or whatever) and use MDH to render it. *Make sure* to check the boxes for "Do not generate CSS" (because MDH provides the CSS) and "Compact mode" (to avoid the multi-line HTML problem I mentioned above).
+
+
+======================
+
+Probably the best way to do rowspan and colspan right now is to use this [online HTML table generator](http://www.tablesgenerator.com/html_tables) to create your table, and then paste it into your email (or whatever) and use MDH to render it. *Make sure* to check the boxes for "Do not generate CSS" (because MDH provides the CSS) and "Compact mode" (to avoid the multi-line HTML problem I mentioned above).
+
 
 <a name="header-anchors" href="#"></a>
 Using Header Anchor Links
