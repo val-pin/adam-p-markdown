@@ -8,7 +8,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
 [Salutation Styling](#salutation)  
-[Creating more complex tables](#tables)
+[Creating more complex tables](#tables)  
 [Using Header Anchor Links](#header-anchors)
 
 <a name="pasting" href="#"></a>
