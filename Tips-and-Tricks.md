@@ -7,7 +7,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 [Using other TeX math formulae renderers](#tex)  
 [Changing the Main Font (and other overall styles)](#mainfont)  
 [Getting fancy with inline HTML](#inlinehtml)  
-[Salutation Styling](#salutation)  
+[Cool CSS stuff](#css)  
 [Creating more complex tables](#tables)  
 [Using Header Anchor Links](#header-anchors)
 
@@ -175,9 +175,22 @@ Happy <span class="hi">Birthday</span> my friend!
 TODO: More compelling, less ridiculous examples.
 
 
-<a name="salutation" href="#"></a>
-Salutation Styling
+<a name="css" href="#"></a>
+Cool CSS stuff
 ==================
+
+### Different numbering for ordered lists
+
+By defaults, ordered (aka numbered) lists use ordinary Arabic numbers (1, 2, 3, ...). But with a single CSS rule you can use Roman numerals, or Greek letters, or Thai numbers, and [lots of others](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type):
+
+```css
+ol {
+  list-style-type: lower-greek;
+}
+```
+
+<a name="salutation" href="#"></a>
+### Salutation Styling
 
 If you want to style the salutation of your email differently from the rest of the email, you can add a CSS rule that applies to the very first paragraph like so:
 
