@@ -3,6 +3,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 ##### Table of Contents  
 
 [Pasting from Clipboard (without tears)](#pasting)  
+[Using an email signature](#sigs)  
 [Footnotes](#footnotes)  
 [Using other TeX math formulae renderers](#tex)  
 [Changing the Main Font (and other overall styles)](#mainfont)  
@@ -30,6 +31,15 @@ If text is pasted from the clipboard with formatting intact, it can negatively i
 - **Chrome**: _Edit_ menu and context menu: "Paste and Match Style". Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Firefox**: There doesn't seem to be a menu item. Hotkey: ⇧⌘V (`Shift+Command+V`).
 - **Thunderbird, Postbox**: _Edit_ menu and context menu: "Paste Without Formatting". Hotkey: ⇧⌘V (`Shift+Command+V`).
+
+
+<a name="sigs" href="#"></a>
+Using email signatures
+======================
+
+Email signatures are automatically excluded from conversion. Specifically, anything after the semi-standard `'-- '` (note the trailing space) is left alone.
+
+Note that Hotmail and Yahoo do not automatically add the `'-- '` to signatures, so you have to add it yourself.
 
 
 <a name="footnotes" href="#"></a>
