@@ -69,6 +69,7 @@ Postbox uses an annoying old version of Gecko (v7, based on `userAgent`), which 
 
 ### The limitations of email.
 
+* [Mailchimp's CSS guide](http://templates.mailchimp.com/development/css/)
 * [Gmail's HTML Tag Whitelist](https://quip.com/aO0pAZO9m9SG)
 
 ## Better HTML-to-Text
