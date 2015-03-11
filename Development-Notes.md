@@ -49,15 +49,7 @@ Postbox uses an annoying old version of Gecko (v7, based on `userAgent`), which 
 
 * Update selection conversion screenshot to not be all about replies.
 
-* Automated test suite. 
-  * This isn't sexy, but important. Stuff has broken in the past because of browser changes, and it's inevitable that I'll make a change without sufficient testing everywhere. Regression tests are badly needed. (And would be good experience for me...)
-
 * Add a visual cue as to what action took place. Sometimes converts and reverts may be a little surprising if the user's selection is off. And sometimes their viewport won't show the entirety of what change occurred.
-
-* Internationalization.
-  * [Mozilla statistics](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/statistics/) suggest that about 35% of Markdown Here users are not anglophones.  
-
-* If a selection conversion is *inside* a paragraph, then it shouldn't add a paragraph to the newly rendered text. That way the text flow won't be totally broken, and the user could actually render just part of a sentence or paragraph.
 
 * I've talked to at least one person who wants Markdown Here to be able to unrender an email *after it's sent*. This would allow him to modify and re-send it, or allow his recipients to modify and send it.
   * This is a bit tricky, since all webmail clients (not Thunderbird) strip the `data-md-original` attribute from the `markdown-here-wrapper` element.
