@@ -10,6 +10,7 @@ Please add any tips and tricks that you come up with. For now it'll be a flat li
 [Getting fancy with inline HTML](#inlinehtml)  
 [Cool CSS stuff](#css)  
 [Creating more complex tables](#tables)  
+[Getting original Markdown from sent email](#post-send-md)  
 [Using Header Anchor Links](#header-anchors)
 
 <a name="pasting" href="#"></a>
@@ -218,6 +219,20 @@ Creating more complex tables
 There is a [feature request](https://github.com/adam-p/markdown-here/issues/176) for adding the ability to span cells across rows and columns, but it hasn't yet been implemented. 
 
 Probably the best way to do rowspan and colspan right now is to use this [online HTML table generator](http://www.tablesgenerator.com/html_tables) to create your table, and then paste it into your email (or whatever) and use MDH to render it. *Make sure* to check the boxes for "Do not generate CSS" (because MDH provides the CSS) and "Compact mode" (to avoid MDH's multi-line HTML [problem](https://github.com/adam-p/markdown-here/issues/157)).
+
+
+<a name="post-send-md" href="#"></a>
+Getting original Markdown from sent email
+=========================================
+
+There is an outstanding [feature request](https://github.com/adam-p/markdown-here/issues/252) to be able to get the original Markdown from a sent email, but for now there's an easy trick to get it:
+
+1. Open the message.
+2. Start a forward of it.
+3. Markdown Toggle.
+4. The forward content will be replaced with the original Markdown.
+
+This has been tested in Gmail and Thunderbird. If the mail client quotes the forwarded content, then it won't work.
 
 
 <a name="header-anchors" href="#"></a>
