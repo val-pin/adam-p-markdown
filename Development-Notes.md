@@ -51,10 +51,6 @@ Postbox uses an annoying old version of Gecko (v7, based on `userAgent`), which 
 
 * Add a visual cue as to what action took place. Sometimes converts and reverts may be a little surprising if the user's selection is off. And sometimes their viewport won't show the entirety of what change occurred.
 
-* I've talked to at least one person who wants Markdown Here to be able to unrender an email *after it's sent*. This would allow him to modify and re-send it, or allow his recipients to modify and send it.
-  * This is a bit tricky, since all webmail clients (not Thunderbird) strip the `data-md-original` attribute from the `markdown-here-wrapper` element.
-  * Idea: base64-encode the original MD, then set it as an inline-data `src` attribute for a very small inline image. The image won't display properly, of course, but the data will be intact and extractable.
-
 * Briefly highlight rendered and reverted blocks/ranges.
   * Probably use [CSS transitions](https://developer.mozilla.org/en/CSS/CSS_transitions).
   * I started this in the `transitions` branch, but wasn't thrilled with how it worked. Might come back to it, though...
@@ -104,7 +100,7 @@ The second aspect is the "target", by which I mean the language that the source 
 
 ### Work
 
-It will require a consider refactor to implement this, to say the least. 
+It will require a considerable refactor to implement this, to say the least. 
 
 It'll also require some UI/UX thought and work to present this to the user in a coherent way. This includes options changes and in-app commands.
 
