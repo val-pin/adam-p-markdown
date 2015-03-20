@@ -206,10 +206,12 @@ ol {
 If you want to style the salutation of your email differently from the rest of the email, you can add a CSS rule that applies to the very first paragraph like so:
 
 ```css
-.markdown-here-wrapper:first-of-type > p:first-of-type {
+.markdown-here-wrapper > p:first-of-type {
   color: red;
 }
 ```
+
+(Note that this will apply to the first paragraph of all MDH-rendered chunks in an email. So if you're rendering multiple selections you'll get multiple red paragraphs. For my complex CSS to fix this, check out [this SO post](https://stackoverflow.com/questions/2717480/css-selector-for-first-element-with-class/8539107#8539107).)
 
 
 <a name="tables" href="#"></a>
