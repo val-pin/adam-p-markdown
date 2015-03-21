@@ -1,14 +1,24 @@
 ## Troubleshooting
 
+
 ### No syntax highlighting
 
 Switch your "Syntax Highlighting CSS" theme in the MDH Options.
 
-![syntax highlighting theme change](https://cloud.githubusercontent.com/assets/425687/4185120/65205546-3753-11e4-9533-60e7d95a3694.png)
+![syntax highlighting theme change](images/syntax-highlighting-theme-switch.png)
+
+
+### Getting the latest Primary Styling CSS
+
+MDH doesn't automatically update your Primary Styling CSS if the default changes ([issue #48](https://github.com/adam-p/markdown-here/issues/48)), so you'll need to manually reset it.
+
+![primary styling css reset](images/primary-styling-css-reset.png)
+
 
 ### Signature getting rendered
 
 See the [Tips and Tricks entry](Tips-and-Tricks#using-email-signatures).
+
 
 ## Reporting and Debugging
 
