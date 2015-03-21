@@ -47,7 +47,7 @@ First-class client. Works great. See open issues [here](https://github.com/adam-
 <a name="inbox-by-google"/>
 #### Inbox By Google
 
-Comparable to Gmail. Except the MDH button doesn't enable while focus is in the "quick compose" box (issue #221) -- but it the hotkey and context menu still work there.
+Comparable to Gmail. Except the MDH button doesn't enable while focus is in the "quick compose" box ([issue #221](https://github.com/adam-p/markdown-here/issues/221)) -- but it the hotkey and context menu still work there.
 
 <a name="google-groups"/>
 #### Google Groups
