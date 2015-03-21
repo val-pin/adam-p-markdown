@@ -1,6 +1,11 @@
 ## Troubleshooting
 
 
+### Toggle isn't working after install
+
+Make sure you restarted Firefox or Thunderbird, and either restarted Chrome/Safari/Opera or reloaded your webmail page.
+
+
 ### No syntax highlighting
 
 Switch your "Syntax Highlighting CSS" theme in the MDH Options.

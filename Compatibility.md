@@ -1,13 +1,18 @@
-Other places where *Markdown Here* works, besides Thunderbird, Gmail, Hotmail, and Yahoo.
+Info about the places where *Markdown Here* works, including limitations and workarounds.
 
 If you find a new problem (or improvement!), or if you find a site that (almost) works, or if you have workflow suggestions, please edit this wiki page, or create a [Github issue](https://github.com/adam-p/markdown-here/issues), or post to the [MDH Google Group](https://groups.google.com/forum/#!forum/markdown-here).
 
 
 * [The "Works Great" Bucket](#the-works-great-bucket)
+  * [Gmail](#gmail)
+  * [Inbox By Google](#inbox-by-google)
+  * [Thunderbird](#thunderbird)
   * [Google Groups](#google-groups)
   * [Evernote](#evernote)
   * [Blogger](#blogger)
   * [Google Sites](#google-sites)
+  * [Outlook.com/Hotmail](#hotmail)
+  * [Yahoo email](#yahoo)
   * [Wordpress](#wordpress)
   * [Freshdesk](#freshdesk)
 * [Postbox](#postbox)
@@ -29,6 +34,21 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
 <a name="the-works-great-bucket"/>
 ### The "Works Great" Bucket
 
+<a name="gmail"/>
+#### Gmail
+
+First-class client. Works great. See open issues [here](https://github.com/adam-p/markdown-here/labels/gmail).
+
+<a name="thunderbird"/>
+#### Thunderbird
+
+First-class client. Works great. See open issues [here](https://github.com/adam-p/markdown-here/labels/thunderbird).
+
+<a name="inbox-by-google"/>
+#### Inbox By Google
+
+Comparable to Gmail. Except the MDH button doesn't enable while focus is in the "quick compose" box (issue #221) -- but it the hotkey and context menu still work there.
+
 <a name="google-groups"/>
 #### Google Groups
 
@@ -44,9 +64,15 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
 <a name="blogger"/>
 #### Blogger
 
-As of version 2.9.0, [earlier problems](https://github.com/adam-p/markdown-here/issues/89) are fixed and [Blogger](http://blogger.com/) is working well. Part of the fix came from changes to the default styling. If you've never customized your CSS, you should click the "Reset to Default" button for the "Primary Styling CSS". If you have customized your CSS, you can [take a look at the default CSS](https://github.com/adam-p/markdown-here/blob/master/src/common/default.css) and decide what to take.
+Works moderately well.
 
-Minor caveat: Some syntax highlighting themes with dark backgrounds don't seem to show up properly. There's an example at the bottom of [this post](http://adampersand.blogspot.ca/2013/10/mdh-test-better-blogger.html).
+There was a styling fix for Blogger in v2.9.0, so make sure you [reset your Primary Styling CSS](Troubleshooting#getting-the-latest-primary-styling-css).
+
+There is currently a problem with editing a draft that was saved rendered: it's no longer possible to unrender, and the styling looks wrong (in the edit view). It was discovered that  Blogger is mangling some attributes -- like `style` and `title` (which is used for storing the original MD). I created a separate extension to work around the problem: https://github.com/adam-p/wysiwyblogger
+
+Other caveats:
+
+* Some syntax highlighting themes with dark backgrounds don't seem to show up properly. There's an example at the bottom of [this post](http://adampersand.blogspot.ca/2013/10/mdh-test-better-blogger.html).
 
 Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting](https://github.com/adam-p/markdown-here/issues/89) that MDH worked with Blogger and for detailing the previous bad behaviour.
 
@@ -57,6 +83,28 @@ Thanks to [lambdaalice](https://github.com/lambdalice) for originally [reporting
 [Google Sites](https://sites.google.com) seems to use an editor similar to Gmail and Google Groups.
 
 You can see some [test pages here](https://sites.google.com/site/markdownheretest/).
+
+
+<a name="hotmail"/>
+#### Outlook.com/Hotmail
+
+Works very well. 
+
+Caveats: 
+
+* Email received from Yahoo does not display with properly separated paragraphs. (Hotmail strips styling off `<p>` and `<div>` tags, and Yahoo uses the latter for paragraphs.)
+* No reply exclusion.
+* No forgot-to-render detection.
+
+
+<a name="yahoo"/>
+#### Yahoo email
+
+Works very well. 
+
+Caveats:
+* Some reply exclusion problems.
+* No forgot-to-render detection.
 
 
 <a name="wordpress"/>
@@ -81,6 +129,7 @@ Check out a [test post](http://adampritch.wordpress.com/2013/10/05/markdown-here
 #### Freshdesk
 
 [@rfay](https://github.com/rfay) [reports](https://github.com/adam-p/markdown-here/issues/227) that Markdown Here works great with the [Freshdesk](http://freshdesk.com/) ticket editor.
+
 
 <a name="postbox"/>
 ### Postbox
