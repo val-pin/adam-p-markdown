@@ -222,6 +222,10 @@ There is a [feature request](https://github.com/adam-p/markdown-here/issues/176)
 
 Probably the best way to do rowspan and colspan right now is to use this [online HTML table generator](http://www.tablesgenerator.com/html_tables) to create your table, and then paste it into your email (or whatever) and use MDH to render it. *Make sure* to check the boxes for "Do not generate CSS" (because MDH provides the CSS) and "Compact mode" (to avoid MDH's multi-line HTML [problem](https://github.com/adam-p/markdown-here/issues/157)).
 
+### Header-less tables
+
+See [this issue comment](https://github.com/adam-p/markdown-here/issues/266#issuecomment-85580214) for help on approximately creating a table without a header row (without using HTML).
+
 
 <a name="post-send-md" href="#"></a>
 Getting original Markdown from sent email
