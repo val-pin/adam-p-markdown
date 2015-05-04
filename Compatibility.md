@@ -15,6 +15,7 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
   * [Yahoo email](#yahoo)
   * [Wordpress](#wordpress)
   * [Freshdesk](#freshdesk)
+  * [Fastmail](#fastmail)
 * [Postbox](#postbox)
 * [Facebook](#facebook)
 * [Google Hangouts](#google-hangouts)
@@ -129,6 +130,17 @@ Check out a [test post](http://adampritch.wordpress.com/2013/10/05/markdown-here
 #### Freshdesk
 
 [@rfay](https://github.com/rfay) [reports](https://github.com/adam-p/markdown-here/issues/227) that Markdown Here works great with the [Freshdesk](http://freshdesk.com/) ticket editor.
+
+
+<a name="Fastmail"/>
+#### Fastmail
+
+[@alexandru](https://github.com/alexandru) and [@leviwheatcroft](https://github.com/leviwheatcroft) reported (via issues) that Markdown Here works with the [Fastmail](https://www.fastmail.com) webmail service.
+
+Caveats:
+
+* Fastmail defaults to plaintext editing. Switch to rich edit. (You can make the switch permanent in the settings.)
+* Fastmail's default rich signature has a broken signature separator -- it uses `--` (dash-dash) instead of `-- ` (dash-dash-space). You can modify your signature in Fastmail's Settings/Accounts.
 
 
 <a name="postbox"/>
