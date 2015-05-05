@@ -2,8 +2,12 @@ If you would like a tool added to this list [email me](mailto:pritchard.adam@gma
 
 ## Tools
 
+### Editors
+
 * [StackEdit](https://stackedit.io): In-browser MD document editor
 * [Minimalist Online Markdown Editor](http://markdown.pioul.fr/)
+* [Mou](http://25.io/mou/): Desktop editor for OS X
+
 
 ## Libraries
 
