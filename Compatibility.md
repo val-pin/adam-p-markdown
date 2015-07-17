@@ -22,6 +22,7 @@ If you find a new problem (or improvement!), or if you find a site that (almost)
 * [Google Hangouts](#google-hangouts)
 * [Tumblr](#tumblr)
 * [Squarespace](#squarespace)
+* [Blackboard Learn](#blackboard-learn)
 * [Editor Tools](#editor-tools)
   * [TinyMCE](#tinymce)
     * [Pasting vs. Typing](#pasting-vs-typing)
@@ -197,6 +198,14 @@ Tumblr also has the option to use a plaintext editor that allows the input of ra
 [Squarespace](http://squarespace.com) is a non-free site creation and hosting service. 
 
 MDH ought to work, but looks pretty bad. Needs to be investigated.
+
+
+<a name="blackboard-learn"/>
+### Blackboard Learn
+
+[Blackboard Learn](https://en.wikipedia.org/wiki/Blackboard_Learn) ([official site](http://www.blackboard.com/)) is a "virtual learning environment and course management system". 
+
+MDH works well in at least some areas of the site. Details can be found in issue [#293](https://github.com/adam-p/markdown-here/issues/293).
 
 
 <a name="editor-tools"/>
