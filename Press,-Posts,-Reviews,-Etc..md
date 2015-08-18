@@ -48,6 +48,8 @@ Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#r
 
 [The Tools I Use: Markdown Here](http://randycoulman.com/blog/2013/08/20/markdown-here/) [randycoulman.com]
 
+[Spicing up Your Emails with Markdown](http://www.sitepoint.com/spicing-up-your-emails-with-markdown/) [sitepoint.com]
+
 
 ## Shorter posts about Markdown Here
 
