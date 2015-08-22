@@ -15,6 +15,9 @@
 * HTML-to-Markdown
   * [domchristie / to-markdown](https://github.com/domchristie/to-markdown)
   * [leeoniya / reMarked.js](https://github.com/leeoniya/reMarked.js)
+  * [Dr. Sax](https://github.com/toddself/dr-sax)
+  * [html.md](https://github.com/neocotic/html.md)
+  * [upndown](https://github.com/netgusto/upndown/)
 
 * [CSSUtilities](http://www.brothercake.com/site/resources/scripts/cssutilities/): "...is a JavaScript library that provides unique and indispensible methods for querying CSS style sheets!"
   * Could maybe be used for better make-styles-explicit.
