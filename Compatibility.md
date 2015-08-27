@@ -150,7 +150,7 @@ Caveats:
 
 [ProtonMail](https://protonmail.ch/) is an end-to-end encrypted email service.
 
-[Antonio Gil reported](https://groups.google.com/forum/#!topic/markdown-here/v2UVY_RR5LY) that Markdown Here works very well with it, with the caveat that the hotkey doesn't work.
+[Antonio Gil reported](https://groups.google.com/forum/#!topic/markdown-here/v2UVY_RR5LY) that Markdown Here works very well with it.
 
 
 <a name="postbox"/>
