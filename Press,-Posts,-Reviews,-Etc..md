@@ -50,6 +50,8 @@ Mozilla reviews: https://addons.mozilla.org/en-US/firefox/addon/markdown-here/#r
 
 [Spicing up Your Emails with Markdown](http://www.sitepoint.com/spicing-up-your-emails-with-markdown/) [sitepoint.com]
 
+[Evernote-Web – Markdown-Erweiterung](http://www.notieren.de/evernote-web-markdown-erweiterung/) [notieren.de; German]
+
 
 ## Shorter posts about Markdown Here
 
