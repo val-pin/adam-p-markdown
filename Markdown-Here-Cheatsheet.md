@@ -18,7 +18,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Inline HTML](#html)  
 [Horizontal Rule](#hr)  
 [Line Breaks](#lines)  
-[Youtube videos](#videos)  
+[YouTube Videos](#videos)  
 
 <a name="headers"/>
 ## Headers
@@ -362,7 +362,7 @@ This line is only separated by a single newline, so it's a separate line in the 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
 <a name="videos"/>
-## Youtube videos
+## YouTube Videos
 
 They can't be added directly but you can add an image with a link to the video like this:
 
