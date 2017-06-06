@@ -9,7 +9,8 @@ A bigger list of tools (that probably negates the need for this page) can be fou
 
 * [StackEdit](https://stackedit.io): In-browser MD document editor
 * [Minimalist Online Markdown Editor](http://markdown.pioul.fr/)
-* [Mou](http://25.io/mou/): Desktop editor for OS X
+* [Mou](http://25.io/mou/): macOS editor
+* [Haroopad](http://pad.haroopress.com/user.html): Cross-platform editor
 
 
 ## Libraries
